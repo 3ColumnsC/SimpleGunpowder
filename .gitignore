@@ -1,21 +1,42 @@
-.gradle
-**/build/
-!**/src/**/build/
+Thumbs.db
 
-# Ignore Gradle GUI config
-gradle-app.setting
+# gradle
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+.gradle/
+build/
+out/
+classes/
 
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
+# eclipse
 
-# Cache of project
-.gradletasknamecache
+*.launch
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+bin/
 .classpath
+.project
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+run/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr

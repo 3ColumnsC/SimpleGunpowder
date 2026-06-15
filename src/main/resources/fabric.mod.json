@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "simplegunpowder",
+	"version": "${version}",
+	"name": "Simple Gunpowder",
+	"description": "A lightweight mod that adds gunpowder recipes and villager trades for easier gunpowder acquisition.",
+	"authors": [
+		"3C Team"
+	],
+	"contact": {
+		"sources": "https://github.com/3ColumnsC/SimpleGunpowder"
+	},
+	"license": "MIT",
+	"icon": "assets/simplegunpowder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.threecolumnsstudio.simplegunpowder.SimpleGunpowder"
+		],
+		"fabric-datagen": [
+			"com.threecolumnsstudio.simplegunpowder.SimpleGunpowderDataGenerator"
+		]
+	},
+	"mixins": [
+		"simplegunpowder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=21",
+		"fabric-api": ">=0.151.0"
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:coal"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 4
+  }
+}

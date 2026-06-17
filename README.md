@@ -5,7 +5,7 @@ A lightweight Minecraft mod that adds alternative gunpowder acquisition methods 
 Designed for survival worlds that need a balanced way to obtain gunpowder without relying entirely on creeper farms or excessive mob grinding.
 
 ![Fabric](https://img.shields.io/badge/Fabric-Supported-green)
-![NeoForge](https://img.shields.io/badge/NeoForge-Soon-red)
+![NeoForge](https://img.shields.io/badge/NeoForge-Supported-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
@@ -65,11 +65,11 @@ Available options:
 ### Fabric
 
 * Fabric API
-* Java 21 or newer
+* (+26.X) Java 25 or newer
 
 ### NeoForge
 
-* Coming soon
+* (+26.X) Java 25 or newer
 
 ---
 

@@ -10,9 +10,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Villager.class)
 public class VillagerMixin {
-	@Inject(method = "updateTrades", at = @At("TAIL"))
-	private void onUpdateTrades(ServerLevel level, CallbackInfo ci) {
-		Villager self = (Villager) (Object) this;
-		SimpleGunpowderTrades.maybeAddGunpowderTrade(self);
-	}
+
+    @Inject(method = "updateTrades", at = @At("TAIL"))
+    private void onUpdateTrades(ServerLevel level, CallbackInfo ci) {
+        Villager self = (Villager) (Object) this;
+        SimpleGunpowderTrades.maybeAddGunpowderTrade(self);
+    }
 }

@@ -1,6 +1,6 @@
 package com.threecolumnsstudio.simplegunpowder.mixin;
 
-import com.threecolumnsstudio.simplegunpowder.SimpleGunpowderTrades;
+import com.threecolumnsstudio.simplegunpowder.neoforge.NeoForgeGunpowderTrades;
 import com.threecolumnsstudio.simplegunpowder.SimpleGunpowder;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.npc.villager.Villager;
@@ -15,6 +15,6 @@ public class VillagerMixin {
     @Inject(method = "updateTrades", at = @At("TAIL"))
     private void onUpdateTrades(ServerLevel level, CallbackInfo ci) {
         Villager self = (Villager) (Object) this;
-        SimpleGunpowderTrades.maybeAddGunpowderTrade(self);
+        NeoForgeGunpowderTrades.maybeAddGunpowderTrade(self);
     }
 }

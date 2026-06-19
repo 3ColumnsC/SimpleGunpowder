@@ -1,19 +1,18 @@
 package com.threecolumnsstudio.simplegunpowder.mixin;
 
-import com.threecolumnsstudio.simplegunpowder.SimpleGunpowderTrades;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.entity.npc.villager.Villager;
+import com.threecolumnsstudio.simplegunpowder.fabric.FabricGunpowderTrades;
+import net.minecraft.entity.passive.VillagerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(Villager.class)
-public class VillagerMixin {
+@Mixin(VillagerEntity.class)
+public abstract class VillagerMixin {
 
-    @Inject(method = "updateTrades", at = @At("TAIL"))
-    private void onUpdateTrades(ServerLevel level, CallbackInfo ci) {
-        Villager self = (Villager) (Object) this;
-        SimpleGunpowderTrades.maybeAddGunpowderTrade(self);
+    @Inject(method = "fillRecipes", at = @At("TAIL"))
+    private void onFillRecipes(CallbackInfo ci) {
+        VillagerEntity self = (VillagerEntity) (Object) this;
+        FabricGunpowderTrades.maybeAddGunpowderTrade(self);
     }
 }

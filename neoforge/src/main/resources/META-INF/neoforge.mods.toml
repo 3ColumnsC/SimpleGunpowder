@@ -17,13 +17,13 @@ config = "simplegunpowder.mixins.json"
 [[dependencies.simplegunpowder]]
 modId = "neoforge"
 type = "required"
-versionRange = "[26.2.0.0-beta,)"
+versionRange = "[21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.simplegunpowder]]
 modId = "minecraft"
 type = "required"
-versionRange = "[26.2,)"
+versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "BOTH"

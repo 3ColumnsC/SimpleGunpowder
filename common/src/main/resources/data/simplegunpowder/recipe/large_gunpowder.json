@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:coal",
-    "minecraft:coal",
-    "minecraft:sand",
-    "minecraft:sand",
-    "minecraft:redstone",
-    "minecraft:redstone"
+    { "item": "minecraft:coal" },
+    { "item": "minecraft:coal" },
+    { "item": "minecraft:sand" },
+    { "item": "minecraft:sand" },
+    { "item": "minecraft:redstone" },
+    { "item": "minecraft:redstone" }
   ],
   "result": {
     "id": "minecraft:gunpowder",

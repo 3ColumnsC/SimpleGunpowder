@@ -1,5 +1,5 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version "${fabric_loom_version}"
+    id 'net.fabricmc.fabric-loom-remap' version "${fabric_loom_version}"
     id 'maven-publish'
 }
 
@@ -7,15 +7,9 @@ base {
     archivesName = "simplegunpowder-fabric"
 }
 
-fabricApi {
-    configureDataGeneration {
-        client = true
-    }
-}
-
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
+        languageVersion = JavaLanguageVersion.of(21)
     }
     withSourcesJar()
 }
@@ -30,12 +24,15 @@ sourceSets {
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:1.21.1+build.3:v2"
 
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
-    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    implementation "net.fabricmc:sponge-mixin:0.17.3+mixin.0.8.7"
 
     // Common classes
-    implementation project(':common')
+    implementation project(path: ':common', configuration: 'namedElements')
 }
 
 processResources {

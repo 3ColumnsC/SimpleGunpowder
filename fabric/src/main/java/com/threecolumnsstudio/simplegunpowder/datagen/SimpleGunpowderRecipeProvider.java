@@ -46,6 +46,13 @@ public class SimpleGunpowderRecipeProvider extends FabricRecipeProvider {
                     .requires(Items.REDSTONE, 2)
                     .unlockedBy("has_coal", has(Items.COAL))
                     .save(recipeOutput, "simplegunpowder:large_gunpowder");
+
+                shapeless(RecipeCategory.MISC, Items.GUNPOWDER, 32)
+                    .requires(Items.COAL_BLOCK)
+                    .requires(Items.SAND)
+                    .requires(Items.REDSTONE)
+                    .unlockedBy("has_coal_block", has(Items.COAL_BLOCK))
+                    .save(recipeOutput, "simplegunpowder:industrial_gunpowder");
             }
         };
     }

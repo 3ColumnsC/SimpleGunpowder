@@ -49,6 +49,11 @@ public class RecipeManagerMixin {
                     modified = true;
                     continue;
                 }
+                if (id.getPath().equals("industrial_gunpowder") && !config.enableIndustrialCrafting) {
+                    SimpleGunpowder.LOGGER.info("Disabled industrial_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
             }
             filtered.add(holder);
         }

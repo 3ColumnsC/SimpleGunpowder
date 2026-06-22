@@ -39,11 +39,16 @@ dependencies {
 }
 
 processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     def version = project.version
     inputs.property "version", version
     filesMatching("fabric.mod.json") {
         expand "version": version
     }
+}
+
+sourcesJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 jar {

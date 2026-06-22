@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:coal_block",
+    "minecraft:sand",
+    "minecraft:redstone"
+  ],
+  "result": {
+    "count": 32,
+    "id": "minecraft:gunpowder"
+  }
+}

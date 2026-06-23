@@ -49,6 +49,10 @@ dependencies {
     implementation project(path: ':common', configuration: 'namedElements')
 }
 
+sourcesJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     manifest {

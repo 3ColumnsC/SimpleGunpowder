@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:coal",
+    "minecraft:coal",
+    "minecraft:sand",
+    "minecraft:sand",
+    "minecraft:redstone",
+    "minecraft:redstone"
+  ],
+  "result": {
+    "count": 10,
+    "id": "minecraft:gunpowder"
+  }
+}

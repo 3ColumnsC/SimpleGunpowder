@@ -6,8 +6,9 @@ license = "MIT"
 modId = "simplegunpowder"
 version = "${file.jarVersion}"
 displayName = "Simple Gunpowder"
+authors = "3C Team"
 description = '''
-A lightweight mod that adds gunpowder recipes and villager trades for easier gunpowder acquisition.
+Adds gunpowder recipes and villager trades, including a bulk recipe for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
 '''
 logoFile = "assets/simplegunpowder/icon.png"
 

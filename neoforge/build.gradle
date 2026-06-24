@@ -37,6 +37,10 @@ java {
     withSourcesJar()
 }
 
+sourcesJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 sourceSets {
     main {
         resources {

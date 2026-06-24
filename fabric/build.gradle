@@ -41,6 +41,11 @@ processResources {
     filesMatching("fabric.mod.json") {
         expand "version": version
     }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+sourcesJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 jar {

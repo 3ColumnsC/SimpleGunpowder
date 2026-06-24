@@ -19,14 +19,25 @@ Adds gunpowder recipes and villager trades, including a bulk recipe for large am
 
 Four configurable gunpowder recipes are included:
 
-| Recipe     | Output       |
-| ---------- | ------------ |
-| Small      | 4 Gunpowder  |
-| Medium     | 6 Gunpowder  |
-| Large      | 10 Gunpowder |
-| Industrial | 32 Gunpowder |
+| Recipe          | Output       |
+| --------------- | ------------ |
+| Small           | 4 Gunpowder  |
+| Medium          | 6 Gunpowder  |
+| Large           | 10 Gunpowder |
+| Large Sulfur    | 14 Gunpowder |
+| Industrial      | 32 Gunpowder |
+| Potent Sulfur   | 48 Gunpowder |
 
 Each recipe can be individually enabled or disabled through the configuration file.
+
+| Recipe          | Ingredients                                             | Output       |
+| --------------- | ------------------------------------------------------- | ------------ |
+| Small           | 3 Coal                                                  | 4 Gunpowder  |
+| Medium          | 2 Coal, 2 Sand                                          | 6 Gunpowder  |
+| Large           | 2 Coal, 2 Sand, 2 Redstone                              | 10 Gunpowder |
+| Large Sulfur    | 2 Coal, 1 Sulfur (or Spike), 1 Cinnabar                 | 14 Gunpowder |
+| Industrial      | 1 Coal Block, 1 Sand, 1 Redstone                        | 32 Gunpowder |
+| Potent Sulfur   | 1 Potent Sulfur, 1 Coal Block, 1 Cinnabar               | 48 Gunpowder |
 
 ### 🧑‍🌾 Villager Trades
 
@@ -51,9 +62,8 @@ Available options:
   "enableMediumCrafting": true,
   "enableLargeCrafting": true,
   "enableIndustrialCrafting": true,
-  "enableTrades": true,
-  "tradeEmeraldCost": 2,
-  "tradeGunpowderAmount": 10
+  "enableLargeSulfurRecipe": true,
+  "enablePotentSulfurRecipe": true
 }
 ```
 

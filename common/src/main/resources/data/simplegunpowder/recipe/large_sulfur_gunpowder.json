@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": "#simplegunpowder:sulfur_materials",
+    "C": "minecraft:coal",
+    "B": "minecraft:cinnabar"
+  },
+  "pattern": [
+    "SC",
+    "CB"
+  ],
+  "result": {
+    "id": "minecraft:gunpowder",
+    "count": 14
+  }
+}

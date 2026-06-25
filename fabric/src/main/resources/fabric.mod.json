@@ -3,7 +3,7 @@
 	"id": "simplegunpowder",
 	"version": "${version}",
 	"name": "Simple Gunpowder",
-	"description": "Adds gunpowder recipes and villager trades, including a bulk recipe for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.",
+	"description": "Adds gunpowder recipes and villager trades, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.",
 	"authors": [
 		"3C Team"
 	],

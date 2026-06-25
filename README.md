@@ -1,6 +1,6 @@
 # Simple Gunpowder
 
-Adds gunpowder recipes and villager trades, including a bulk recipe for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
+Adds gunpowder recipes and villager trades, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
 
 ![Fabric](https://img.shields.io/badge/Fabric-Supported-green)
 ![NeoForge](https://img.shields.io/badge/NeoForge-Supported-green)
@@ -8,8 +8,12 @@ Adds gunpowder recipes and villager trades, including a bulk recipe for large am
 
 ---
 
-<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782139737/small-medium-large_rzsgdk.png" alt="Small, Medium & Large Gunpowder Recipes" width="900">
-<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782139737/industrial_aiwhfk.png" alt="Industrial Gunpowder Recipe" width="900">
+## 📀 26.2+
+<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782370733/sulfur_vj2ywx.jpg" alt="Sulfur Gunpowder Recipes" width="900">
+
+## 💿 Available for All Versions
+<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782370686/small-medium-large_rzsgdk_uyiuf0.jpg" alt="Small, Medium & Large Gunpowder Recipes" width="900">
+<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782370648/industrial_aiwhfk_vem9a7.jpg" alt="Industrial Gunpowder Recipe" width="900">
 
 ---
 
@@ -30,19 +34,14 @@ Four configurable gunpowder recipes are included:
 
 Each recipe can be individually enabled or disabled through the configuration file.
 
-| Recipe          | Ingredients                                             | Output       |
-| --------------- | ------------------------------------------------------- | ------------ |
-| Small           | 3 Coal                                                  | 4 Gunpowder  |
-| Medium          | 2 Coal, 2 Sand                                          | 6 Gunpowder  |
-| Large           | 2 Coal, 2 Sand, 2 Redstone                              | 10 Gunpowder |
-| Large Sulfur    | 2 Coal, 1 Sulfur (or Spike), 1 Cinnabar                 | 14 Gunpowder |
-| Industrial      | 1 Coal Block, 1 Sand, 1 Redstone                        | 32 Gunpowder |
-| Potent Sulfur   | 1 Potent Sulfur, 1 Coal Block, 1 Cinnabar               | 48 Gunpowder |
-
 ### 🧑‍🌾 Villager Trades
 
-* Novice Fletcher & Cleric villagers can sell gunpowder.
-* Trade cost and amount are configurable.
+Novice Fletcher and Cleric villagers can offer the following trades:
+
+| Wants | Gives |
+|-------|-------|
+| 2 Emeralds | 10 Gunpowder |
+| 1 Sulfur + 1 Cinnabar | 6 Gunpowder |
 
 ---
 

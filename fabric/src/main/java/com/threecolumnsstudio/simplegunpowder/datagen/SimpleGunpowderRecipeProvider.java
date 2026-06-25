@@ -6,6 +6,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.resources.Identifier;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
@@ -53,6 +56,25 @@ public class SimpleGunpowderRecipeProvider extends FabricRecipeProvider {
                     .requires(Items.REDSTONE)
                     .unlockedBy("has_coal_block", has(Items.COAL_BLOCK))
                     .save(recipeOutput, "simplegunpowder:industrial_gunpowder");
+
+                TagKey<Item> sulfurMaterials = TagKey.create(net.minecraft.core.registries.Registries.ITEM,
+                    Identifier.fromNamespaceAndPath("simplegunpowder", "sulfur_materials"));
+
+                shaped(RecipeCategory.MISC, Items.GUNPOWDER, 14)
+                    .pattern("SC")
+                    .pattern("CB")
+                    .define('S', sulfurMaterials)
+                    .define('C', Items.COAL)
+                    .define('B', Items.CINNABAR)
+                    .unlockedBy("has_cinnabar", has(Items.CINNABAR))
+                    .save(recipeOutput, "simplegunpowder:large_sulfur_gunpowder");
+
+                shapeless(RecipeCategory.MISC, Items.GUNPOWDER, 48)
+                    .requires(Items.POTENT_SULFUR)
+                    .requires(Items.COAL_BLOCK)
+                    .requires(Items.CINNABAR)
+                    .unlockedBy("has_potent_sulfur", has(Items.POTENT_SULFUR))
+                    .save(recipeOutput, "simplegunpowder:potent_sulfur_gunpowder");
             }
         };
     }

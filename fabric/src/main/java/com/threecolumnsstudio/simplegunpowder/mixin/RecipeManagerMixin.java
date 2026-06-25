@@ -54,6 +54,17 @@ public class RecipeManagerMixin {
                     modified = true;
                     continue;
                 }
+                if (id.getPath().equals("large_sulfur_gunpowder") && !config.enableLargeSulfurRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled large_sulfur_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                if (id.getPath().equals("potent_sulfur_gunpowder") && !config.enablePotentSulfurRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled potent_sulfur_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                SimpleGunpowder.LOGGER.info("Loaded {} recipe", id.getPath());
             }
             filtered.add(holder);
         }

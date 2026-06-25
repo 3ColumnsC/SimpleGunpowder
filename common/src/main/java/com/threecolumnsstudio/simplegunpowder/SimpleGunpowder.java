@@ -16,7 +16,6 @@ public final class SimpleGunpowder {
      */
     public static void init() {
         SimpleGunpowderConfig.load();
-        SimpleGunpowderTrades.logConfiguration();
         LOGGER.info("{} initialized", MOD_ID);
     }
 }

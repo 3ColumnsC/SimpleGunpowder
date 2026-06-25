@@ -18,9 +18,6 @@ public class SimpleGunpowderConfig {
     public boolean enableMediumCrafting = true;
     public boolean enableLargeCrafting = true;
     public boolean enableIndustrialCrafting = true;
-    public boolean enableTrades = true;
-    public int tradeEmeraldCost = 2;
-    public int tradeGunpowderAmount = 10;
 
     public static SimpleGunpowderConfig getInstance() {
         if (INSTANCE == null) {
@@ -51,8 +48,6 @@ public class SimpleGunpowderConfig {
     }
 
     private static void validate() {
-        if (INSTANCE.tradeEmeraldCost < 1)   INSTANCE.tradeEmeraldCost   = 2;
-        if (INSTANCE.tradeGunpowderAmount < 1) INSTANCE.tradeGunpowderAmount = 10;
     }
 
     public static void save() {

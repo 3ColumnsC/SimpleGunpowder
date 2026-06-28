@@ -3,7 +3,7 @@
 	"minVersion": "0.8.5",
 	"package": "com.threecolumnsstudio.simplegunpowder.mixin",
 	"compatibilityLevel": "JAVA_17",
-	"refmap": "simplegunpowder-fabric-refmap.json",
+	"refmap": "simplegunpowder.refmap.json",
 	"mixins": [
 		"RecipeManagerMixin"
 	],

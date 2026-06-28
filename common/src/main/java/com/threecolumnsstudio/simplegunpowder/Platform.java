@@ -23,5 +23,5 @@ public interface Platform {
 
 /** Package-private holder so Platform.set() stays in this package. */
 class PlatformHolder {
-    static Platform INSTANCE;
+    static volatile Platform INSTANCE;
 }

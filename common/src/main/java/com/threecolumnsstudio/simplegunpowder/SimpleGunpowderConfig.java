@@ -18,8 +18,6 @@ public class SimpleGunpowderConfig {
     public boolean enableMediumCrafting = true;
     public boolean enableLargeCrafting = true;
     public boolean enableIndustrialCrafting = true;
-    public boolean enableLargeSulfurRecipe = true;
-    public boolean enablePotentSulfurRecipe = true;
 
     public static SimpleGunpowderConfig getInstance() {
         if (INSTANCE == null) {

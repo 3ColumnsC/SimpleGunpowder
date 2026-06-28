@@ -1,20 +1,27 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version "${fabric_loom_version}"
+    id 'fabric-loom' version "${fabric_loom_version}"
 }
 
 loom {
-    runConfigs.clear()
+    runConfigs {
+        client {
+            ideConfigGenerated = false
+        }
+        server {
+            ideConfigGenerated = false
+        }
+    }
 }
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(25)
+        languageVersion = JavaLanguageVersion.of(17)
     }
     withSourcesJar()
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    // Gson is bundled with MC
+    mappings "net.fabricmc:yarn:1.19.2+build.28:v2"
     compileOnly 'com.google.code.gson:gson:2.10.1'
 }

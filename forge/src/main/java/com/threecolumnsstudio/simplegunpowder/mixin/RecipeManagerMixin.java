@@ -2,12 +2,12 @@ package com.threecolumnsstudio.simplegunpowder.mixin;
 
 import com.threecolumnsstudio.simplegunpowder.SimpleGunpowder;
 import com.threecolumnsstudio.simplegunpowder.SimpleGunpowderConfig;
-import net.minecraft.recipe.Recipe;
-import net.minecraft.recipe.RecipeManager;
-import net.minecraft.recipe.RecipeType;
-import net.minecraft.resource.ResourceManager;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.profiler.Profiler;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.util.profiling.ProfilerFiller;
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.world.item.crafting.RecipeType;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,22 +18,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Mixin(RecipeManager.class)
-public abstract class RecipeManagerMixin {
+public class RecipeManagerMixin {
 
     @Shadow
-    private Map<Identifier, Recipe<?>> recipesById;
+    private Map<ResourceLocation, Recipe<?>> byName;
 
     @Shadow
-    private Map<RecipeType<?>, Map<Identifier, Recipe<?>>> recipes;
+    private Map<RecipeType<?>, Map<ResourceLocation, Recipe<?>>> recipes;
 
     @Inject(method = "apply", at = @At("TAIL"))
-    private void onApply(Map<Identifier, Recipe<?>> map, ResourceManager resourceManager,
-                         Profiler profiler, CallbackInfo ci) {
+    private void onApply(Map<ResourceLocation, Recipe<?>> map, ResourceManager resourceManager,
+                         ProfilerFiller profilerFiller, CallbackInfo ci) {
 
         SimpleGunpowderConfig config = SimpleGunpowderConfig.getInstance();
 
         SimpleGunpowder.LOGGER.info("RecipeManagerMixin: {} recipes loaded, config small={} medium={} large={} industrial={}",
-            this.recipesById.size(),
+            this.byName.size(),
             config.enableSmallCrafting, config.enableMediumCrafting,
             config.enableLargeCrafting, config.enableIndustrialCrafting);
 
@@ -44,10 +44,10 @@ public abstract class RecipeManagerMixin {
         }
 
         boolean modified = false;
-        Map<Identifier, Recipe<?>> filtered = new HashMap<>();
+        Map<ResourceLocation, Recipe<?>> filtered = new HashMap<>();
 
-        for (Map.Entry<Identifier, Recipe<?>> entry : this.recipesById.entrySet()) {
-            Identifier id = entry.getKey();
+        for (Map.Entry<ResourceLocation, Recipe<?>> entry : this.byName.entrySet()) {
+            ResourceLocation id = entry.getKey();
 
             if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)) {
                 SimpleGunpowder.LOGGER.debug("Found custom recipe: {}", id);
@@ -78,16 +78,16 @@ public abstract class RecipeManagerMixin {
 
         if (modified) {
             SimpleGunpowder.LOGGER.info("RecipeManagerMixin: filtered to {} recipes", filtered.size());
-            this.recipesById = filtered;
+            this.byName = filtered;
 
-            Map<RecipeType<?>, Map<Identifier, Recipe<?>>> filteredByType = new HashMap<>();
-            for (Map.Entry<Identifier, Recipe<?>> entry : filtered.entrySet()) {
+            Map<RecipeType<?>, Map<ResourceLocation, Recipe<?>>> filteredByType = new HashMap<>();
+            for (Map.Entry<ResourceLocation, Recipe<?>> entry : filtered.entrySet()) {
                 filteredByType.computeIfAbsent(entry.getValue().getType(), k -> new HashMap<>())
                     .put(entry.getKey(), entry.getValue());
             }
             this.recipes = filteredByType;
         } else {
-            SimpleGunpowder.LOGGER.info("RecipeManagerMixin: no recipes filtered, {} recipes remain", this.recipesById.size());
+            SimpleGunpowder.LOGGER.info("RecipeManagerMixin: no recipes filtered, {} recipes remain", this.byName.size());
         }
     }
 }

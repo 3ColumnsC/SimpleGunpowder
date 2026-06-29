@@ -4,6 +4,7 @@ Adds gunpowder recipes and villager trades, including bulk recipes for large amo
 
 ![Fabric](https://img.shields.io/badge/Fabric-Supported-green)
 ![NeoForge](https://img.shields.io/badge/NeoForge-Supported-green)
+![Forge](https://img.shields.io/badge/Forge-Supported-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
@@ -78,6 +79,10 @@ Available options:
 ### NeoForge
 
 * (+26.X) Java 25 or newer
+
+### Forge
+
+* Java 17 or newer
 
 ---
 

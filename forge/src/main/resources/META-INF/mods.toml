@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "simplegunpowder"
+version = "${file.jarVersion}"
+displayName = "Simple Gunpowder"
+authors = "3C Team"
+description = '''
+Adds gunpowder recipes and villager trades, including a bulk recipe for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
+'''
+logoFile = "icon.png"
+
+[[dependencies.simplegunpowder]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simplegunpowder]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"

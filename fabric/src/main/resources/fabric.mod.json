@@ -3,7 +3,7 @@
 	"id": "simplegunpowder",
 	"version": "${version}",
 	"name": "Simple Gunpowder",
-	"description": "Adds gunpowder recipes and villager trades, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.",
+	"description": "Adds gunpowder recipes and villager trades, including a bulk recipe for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.",
 	"authors": [
 		"3C Team"
 	],
@@ -18,18 +18,15 @@
 	"entrypoints": {
 		"main": [
 			"com.threecolumnsstudio.simplegunpowder.fabric.SimpleGunpowderFabric"
-		],
-		"fabric-datagen": [
-			"com.threecolumnsstudio.simplegunpowder.fabric.SimpleGunpowderFabricDataGenerator"
 		]
 	},
 	"mixins": [
 		"simplegunpowder.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
-		"java": ">=25",
-		"fabric-api": ">=0.152.1"
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": ">=0.77.0"
 	}
 }

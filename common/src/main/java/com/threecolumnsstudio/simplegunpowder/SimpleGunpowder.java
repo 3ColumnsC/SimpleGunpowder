@@ -11,7 +11,7 @@ public final class SimpleGunpowder {
     private SimpleGunpowder() {}
 
     /**
-     * Called by both the Fabric ModInitializer and the NeoForge @Mod constructor.
+     * Called by both the Fabric ModInitializer and the Forge @Mod constructor.
      * Platform.set() must have been called before this.
      */
     public static void init() {

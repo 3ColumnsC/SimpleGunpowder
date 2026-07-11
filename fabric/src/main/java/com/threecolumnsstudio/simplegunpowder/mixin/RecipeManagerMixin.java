@@ -39,7 +39,8 @@ public abstract class RecipeManagerMixin {
             config.enableLargeCrafting, config.enableIndustrialCrafting);
 
         if (config.enableSmallCrafting && config.enableMediumCrafting &&
-            config.enableLargeCrafting && config.enableIndustrialCrafting) {
+            config.enableLargeCrafting && config.enableIndustrialCrafting &&
+            config.enableNetherSmallRecipe && config.enableNetherMediumRecipe) {
             SimpleGunpowder.LOGGER.info("RecipeManagerMixin: all recipes enabled, skipping filter");
             return;
         }
@@ -70,6 +71,16 @@ public abstract class RecipeManagerMixin {
                 }
                 if (id.getPath().equals("industrial_gunpowder") && !config.enableIndustrialCrafting) {
                     SimpleGunpowder.LOGGER.info("Disabled industrial_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                if (id.getPath().equals("nether_small_gunpowder") && !config.enableNetherSmallRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled nether_small_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                if (id.getPath().equals("nether_medium_gunpowder") && !config.enableNetherMediumRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled nether_medium_gunpowder recipe");
                     modified = true;
                     continue;
                 }

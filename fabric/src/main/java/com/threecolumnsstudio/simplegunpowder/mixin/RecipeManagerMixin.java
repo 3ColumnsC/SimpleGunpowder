@@ -55,6 +55,17 @@ public abstract class RecipeManagerMixin {
                     modified = true;
                     continue;
                 }
+                if (id.getPath().equals("nether_small_gunpowder") && !config.enableNetherSmallRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled nether_small_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                if (id.getPath().equals("nether_medium_gunpowder") && !config.enableNetherMediumRecipe) {
+                    SimpleGunpowder.LOGGER.info("Disabled nether_medium_gunpowder recipe");
+                    modified = true;
+                    continue;
+                }
+                SimpleGunpowder.LOGGER.info("Loaded {} recipe", id.getPath());
             }
             filtered.add(entry);
         }

@@ -18,6 +18,8 @@ public class SimpleGunpowderConfig {
     public boolean enableMediumCrafting = true;
     public boolean enableLargeCrafting = true;
     public boolean enableIndustrialCrafting = true;
+    public boolean enableNetherSmallRecipe = true;
+    public boolean enableNetherMediumRecipe = true;
 
     public static SimpleGunpowderConfig getInstance() {
         if (INSTANCE == null) {

@@ -3,7 +3,7 @@
 	"id": "simplegunpowder",
 	"version": "${version}",
 	"name": "Simple Gunpowder",
-	"description": "Adds gunpowder recipes, villager trades and piglin bartering, including bulk recipes for large amounts of gunpowder.",
+	"description": "Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder.",
 	"authors": [
 		"3C Team"
 	],

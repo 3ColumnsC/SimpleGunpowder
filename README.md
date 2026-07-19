@@ -1,13 +1,8 @@
 # Simple Gunpowder
 
-Adds gunpowder recipes, villager trades and piglin bartering, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
+Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
 
 8 Progression-Ready Overworld & Nether recipes.
-
-![Fabric](https://img.shields.io/badge/Fabric-Supported-green)
-![NeoForge](https://img.shields.io/badge/NeoForge-Supported-green)
-![Forge](https://img.shields.io/badge/Forge-Supported-green)
-![License](https://img.shields.io/badge/License-MIT-blue)
 
 ---
 
@@ -27,16 +22,22 @@ Adds gunpowder recipes, villager trades and piglin bartering, including bulk rec
 
 Eight configurable gunpowder recipes are included:
 
-| Recipe          | Output       |
-| --------------- | ------------ |
-| Small           | 4 Gunpowder  |
-| Medium          | 6 Gunpowder  |
-| Large           | 10 Gunpowder |
-| Large Sulfur    | 14 Gunpowder |
-| Industrial      | 32 Gunpowder |
-| Potent Sulfur   | 48 Gunpowder |
-| Nether Small    | 8 Gunpowder  |
-| Nether Medium   | 12 Gunpowder |
+| Overworld Recipes | Output       |
+|-------------------| ------------ |
+| Small             | 4 Gunpowder  |
+| Medium            | 6 Gunpowder  |
+| Large             | 10 Gunpowder |
+| Industrial        | 32 Gunpowder |
+
+| Overworld Sulfur Recipes | Output       |
+|--------------------------| ------------ |
+| Refined Sulfur           | 14 Gunpowder |
+| Potent Sulfur            | 48 Gunpowder |
+
+| Nether Recipes | Output       |
+|----------------| ------------ |
+| Nether Small   | 8 Gunpowder  |
+| Nether Medium  | 12 Gunpowder |
 
 Each recipe can be individually enabled or disabled through the configuration file.
 
@@ -51,7 +52,11 @@ Novice Fletcher and Cleric villagers can offer the following trades:
 
 ### 🐷 Piglin Bartering
 
-Piglins have a chance to barter gunpowder (4–12) when given a gold ingot.
+Piglins have a chance to barter gunpowder (8–16) when given a gold ingot.
+
+### 🏛️ End City Chests
+
+End city treasure chests have a chance to contain gunpowder (48–64).
 
 ---
 
@@ -71,7 +76,7 @@ Available options:
   "enableMediumCrafting": true,
   "enableLargeCrafting": true,
   "enableIndustrialCrafting": true,
-  "enableLargeSulfurRecipe": true,
+  "enableRefinedSulfurRecipe": true,
   "enablePotentSulfurRecipe": true,
   "enableNetherSmallRecipe": true,
   "enableNetherMediumRecipe": true

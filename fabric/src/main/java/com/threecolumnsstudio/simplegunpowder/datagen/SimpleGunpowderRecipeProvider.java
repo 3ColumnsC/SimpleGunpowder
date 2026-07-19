@@ -67,7 +67,7 @@ public class SimpleGunpowderRecipeProvider extends FabricRecipeProvider {
                     .define('C', Items.COAL)
                     .define('B', Items.CINNABAR)
                     .unlockedBy("has_cinnabar", has(Items.CINNABAR))
-                    .save(recipeOutput, "simplegunpowder:large_sulfur_gunpowder");
+                    .save(recipeOutput, "simplegunpowder:refined_sulfur_gunpowder");
 
                 shapeless(RecipeCategory.MISC, Items.GUNPOWDER, 48)
                     .requires(Items.POTENT_SULFUR)

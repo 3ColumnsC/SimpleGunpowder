@@ -18,7 +18,7 @@ public class SimpleGunpowderConfig {
     public boolean enableMediumCrafting = true;
     public boolean enableLargeCrafting = true;
     public boolean enableIndustrialCrafting = true;
-    public boolean enableLargeSulfurRecipe = true;
+    public boolean enableRefinedSulfurRecipe = true;
     public boolean enablePotentSulfurRecipe = true;
     public boolean enableNetherSmallRecipe = true;
     public boolean enableNetherMediumRecipe = true;

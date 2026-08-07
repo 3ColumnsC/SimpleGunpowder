@@ -7,10 +7,6 @@ import net.minecraft.world.item.crafting.RecipeMap;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Removes simplegunpowder recipes that are disabled in the config.
- * Called from the per-loader RecipeManagerMixin on every datapack reload.
- */
 public final class RecipeFilter {
 
     private RecipeFilter() {}

@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": { "recipe": "simplegunpowder:refined_sulfur_gunpowder" },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_sulfur_materials": {
+      "conditions": { "items": [ { "items": "#simplegunpowder:sulfur_materials" } ] },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [ [ "has_the_recipe", "has_sulfur_materials" ] ],
+  "rewards": { "recipes": [ "simplegunpowder:refined_sulfur_gunpowder" ] }
+}

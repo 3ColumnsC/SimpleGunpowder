@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
-import java.io.Reader;
 import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,7 +11,8 @@ import java.nio.file.Path;
 public class SimpleGunpowderConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static SimpleGunpowderConfig INSTANCE;
+
+    private static volatile SimpleGunpowderConfig INSTANCE;
 
     public boolean enableSmallCrafting = true;
     public boolean enableMediumCrafting = true;
@@ -20,6 +20,18 @@ public class SimpleGunpowderConfig {
     public boolean enableIndustrialCrafting = true;
     public boolean enableNetherSmallRecipe = true;
     public boolean enableNetherMediumRecipe = true;
+
+    public boolean isEnabled(String recipePath) {
+        return switch (recipePath) {
+            case "small_gunpowder" -> enableSmallCrafting;
+            case "medium_gunpowder" -> enableMediumCrafting;
+            case "large_gunpowder" -> enableLargeCrafting;
+            case "industrial_gunpowder" -> enableIndustrialCrafting;
+            case "nether_small_gunpowder" -> enableNetherSmallRecipe;
+            case "nether_medium_gunpowder" -> enableNetherMediumRecipe;
+            default -> true;
+        };
+    }
 
     public static SimpleGunpowderConfig getInstance() {
         if (INSTANCE == null) {
@@ -29,27 +41,24 @@ public class SimpleGunpowderConfig {
     }
 
     public static void load() {
-        // Platform.get() resolves to FabricLoader or FMLPaths depending on loader
         Path configPath = Platform.get().getConfigDir().resolve("simplegunpowder.json");
 
-        if (Files.exists(configPath)) {
-            try (Reader reader = Files.newBufferedReader(configPath)) {
-                INSTANCE = GSON.fromJson(reader, SimpleGunpowderConfig.class);
-                if (INSTANCE == null) INSTANCE = new SimpleGunpowderConfig();
-                validate();
-                save();
-            } catch (Exception e) {
-                SimpleGunpowder.LOGGER.warn("Could not read config, using defaults", e);
+        String saved = null;
+        try {
+            saved = Files.exists(configPath) ? Files.readString(configPath) : null;
+            INSTANCE = saved == null ? new SimpleGunpowderConfig()
+                    : GSON.fromJson(saved, SimpleGunpowderConfig.class);
+            if (INSTANCE == null) {
                 INSTANCE = new SimpleGunpowderConfig();
-                save();
             }
-        } else {
+        } catch (Exception e) {
+            SimpleGunpowder.LOGGER.warn("Could not read config, using defaults", e);
             INSTANCE = new SimpleGunpowderConfig();
+        }
+
+        if (!GSON.toJson(INSTANCE).equals(saved)) {
             save();
         }
-    }
-
-    private static void validate() {
     }
 
     public static void save() {

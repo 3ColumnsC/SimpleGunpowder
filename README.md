@@ -12,7 +12,7 @@ Adds gunpowder recipes, villager trades, piglin bartering and End City loot, inc
 ## 💿 Available for All Versions
 <img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782370686/small-medium-large_rzsgdk_uyiuf0.jpg" alt="Small, Medium & Large Gunpowder Recipes" width="900">
 <img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1782370648/industrial_aiwhfk_vem9a7.jpg" alt="Industrial Gunpowder Recipe" width="900">
-<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1783753640/sgImages_hxqagc.jpg" alt="Nether Recipes" width="900">
+<img src="https://res.cloudinary.com/dbtdewiqk/image/upload/v1786031458/sgImages_zaztru.jpg" alt="Nether Recipes" width="900">
 
 ---
 
@@ -90,6 +90,7 @@ Available options:
 ### Fabric
 
 * Fabric API
+* ModMenu (Optional)
 * (+26.X) Java 25 or newer
 
 ### NeoForge
@@ -99,6 +100,13 @@ Available options:
 ### Forge
 
 * Java 17 or newer
+
+---
+
+## ❓ FAQ
+
+**Can I use this mod in a public modpack?** <br>
+Yes! You're free to include it in any public or private modpack, no permission needed.
 
 ---
 

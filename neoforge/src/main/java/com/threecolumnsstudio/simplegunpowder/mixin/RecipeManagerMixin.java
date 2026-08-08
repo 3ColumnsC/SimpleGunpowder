@@ -32,46 +32,18 @@ public class RecipeManagerMixin {
     @Inject(method = "apply", at = @At("TAIL"))
     private void onApply(Map<ResourceLocation, JsonElement> map, ResourceManager resourceManager,
                          ProfilerFiller profilerFiller, CallbackInfo ci) {
-
         SimpleGunpowderConfig config = SimpleGunpowderConfig.getInstance();
         boolean modified = false;
         Map<ResourceLocation, RecipeHolder<?>> filtered = new HashMap<>();
 
         for (Map.Entry<ResourceLocation, RecipeHolder<?>> entry : this.byName.entrySet()) {
             ResourceLocation id = entry.getKey();
-
-            if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)) {
-                if (id.getPath().equals("small_gunpowder") && !config.enableSmallCrafting) {
-                    SimpleGunpowder.LOGGER.info("Disabled small_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                if (id.getPath().equals("medium_gunpowder") && !config.enableMediumCrafting) {
-                    SimpleGunpowder.LOGGER.info("Disabled medium_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                if (id.getPath().equals("large_gunpowder") && !config.enableLargeCrafting) {
-                    SimpleGunpowder.LOGGER.info("Disabled large_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                if (id.getPath().equals("industrial_gunpowder") && !config.enableIndustrialCrafting) {
-                    SimpleGunpowder.LOGGER.info("Disabled industrial_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                if (id.getPath().equals("nether_small_gunpowder") && !config.enableNetherSmallRecipe) {
-                    SimpleGunpowder.LOGGER.info("Disabled nether_small_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                if (id.getPath().equals("nether_medium_gunpowder") && !config.enableNetherMediumRecipe) {
-                    SimpleGunpowder.LOGGER.info("Disabled nether_medium_gunpowder recipe");
-                    modified = true;
-                    continue;
-                }
-                SimpleGunpowder.LOGGER.info("Loaded {} recipe", id.getPath());
+            if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)
+                    && !config.isEnabled(id.getPath())) {
+                SimpleGunpowder.LOGGER.info(
+                    "Disabled {} recipe (re-enable it in config/simplegunpowder.json)", id.getPath());
+                modified = true;
+                continue;
             }
             filtered.put(entry.getKey(), entry.getValue());
         }

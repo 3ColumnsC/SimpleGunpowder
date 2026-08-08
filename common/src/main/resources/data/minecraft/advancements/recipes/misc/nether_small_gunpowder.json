@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": { "recipe": "simplegunpowder:nether_small_gunpowder" },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_magma_block": {
+      "conditions": { "items": [ { "items": [ "minecraft:magma_block" ] } ] },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [ [ "has_the_recipe", "has_magma_block" ] ],
+  "rewards": { "recipes": [ "simplegunpowder:nether_small_gunpowder" ] },
+  "sends_telemetry_event": false
+}

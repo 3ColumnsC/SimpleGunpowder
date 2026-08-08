@@ -1,0 +1,16 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": { "recipe": "simplegunpowder:medium_gunpowder" },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_coal": {
+      "conditions": { "items": [ { "items": [ "minecraft:coal" ] } ] },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [ [ "has_the_recipe", "has_coal" ] ],
+  "rewards": { "recipes": [ "simplegunpowder:medium_gunpowder" ] },
+  "sends_telemetry_event": false
+}

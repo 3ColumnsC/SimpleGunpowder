@@ -8,8 +8,16 @@
     "has_potent_sulfur": {
       "conditions": { "items": [ { "items": "minecraft:potent_sulfur" } ] },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_coal_block": {
+      "conditions": { "items": [ { "items": "minecraft:coal_block" } ] },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_cinnabar": {
+      "conditions": { "items": [ { "items": "minecraft:cinnabar" } ] },
+      "trigger": "minecraft:inventory_changed"
     }
   },
-  "requirements": [ [ "has_the_recipe", "has_potent_sulfur" ] ],
+  "requirements": [ [ "has_the_recipe", "has_potent_sulfur", "has_coal_block", "has_cinnabar" ] ],
   "rewards": { "recipes": [ "simplegunpowder:potent_sulfur_gunpowder" ] }
 }

@@ -17,4 +17,5 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     // Gson is bundled with MC
     compileOnly 'com.google.code.gson:gson:2.10.1'
+    compileOnly "net.fabricmc:sponge-mixin:${project.sponge_mixin_version}"
 }

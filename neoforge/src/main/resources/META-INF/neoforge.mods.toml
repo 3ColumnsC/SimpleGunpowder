@@ -10,6 +10,7 @@ authors = "3C Team"
 description = '''
 Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder.
 '''
+displayURL = "https://modrinth.com/mod/simple-gunpowder"
 logoFile = "assets/simplegunpowder/icon.png"
 
 [[mixins]]

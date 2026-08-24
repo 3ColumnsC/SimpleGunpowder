@@ -8,8 +8,12 @@
     "has_magma_block": {
       "conditions": { "items": [ { "items": "minecraft:magma_block" } ] },
       "trigger": "minecraft:inventory_changed"
+    },
+    "has_coal": {
+      "conditions": { "items": [ { "items": "minecraft:coal" } ] },
+      "trigger": "minecraft:inventory_changed"
     }
   },
-  "requirements": [ [ "has_the_recipe", "has_magma_block" ] ],
+  "requirements": [ [ "has_the_recipe", "has_magma_block", "has_coal" ] ],
   "rewards": { "recipes": [ "simplegunpowder:nether_small_gunpowder" ] }
 }

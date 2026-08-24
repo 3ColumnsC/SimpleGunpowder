@@ -11,26 +11,44 @@ import java.nio.file.Path;
 public class SimpleGunpowderConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
+    private static final String FILE_NAME = "simplegunpowder.json";
 
     private static volatile SimpleGunpowderConfig INSTANCE;
 
-    public boolean enableSmallCrafting = true;
-    public boolean enableMediumCrafting = true;
-    public boolean enableLargeCrafting = true;
-    public boolean enableIndustrialCrafting = true;
-    public boolean enableNetherSmallRecipe = true;
-    public boolean enableNetherMediumRecipe = true;
+    private boolean enableSmallCrafting = true;
+    private boolean enableMediumCrafting = true;
+    private boolean enableLargeCrafting = true;
+    private boolean enableIndustrialCrafting = true;
+    private boolean enableNetherSmallRecipe = true;
+    private boolean enableNetherMediumRecipe = true;
+
+    public boolean isSmallCraftingEnabled() {
+        return enableSmallCrafting;
+    }
+
+    public boolean isMediumCraftingEnabled() {
+        return enableMediumCrafting;
+    }
+
+    public boolean isLargeCraftingEnabled() {
+        return enableLargeCrafting;
+    }
+
+    public boolean isIndustrialCraftingEnabled() {
+        return enableIndustrialCrafting;
+    }
+
+    public boolean isNetherSmallRecipeEnabled() {
+        return enableNetherSmallRecipe;
+    }
+
+    public boolean isNetherMediumRecipeEnabled() {
+        return enableNetherMediumRecipe;
+    }
 
     public boolean isEnabled(String recipePath) {
-        return switch (recipePath) {
-            case "small_gunpowder" -> enableSmallCrafting;
-            case "medium_gunpowder" -> enableMediumCrafting;
-            case "large_gunpowder" -> enableLargeCrafting;
-            case "industrial_gunpowder" -> enableIndustrialCrafting;
-            case "nether_small_gunpowder" -> enableNetherSmallRecipe;
-            case "nether_medium_gunpowder" -> enableNetherMediumRecipe;
-            default -> true;
-        };
+        RecipeToggle toggle = RecipeToggle.fromPath(recipePath);
+        return toggle == null || toggle.isEnabled(this);
     }
 
     public static SimpleGunpowderConfig getInstance() {
@@ -41,7 +59,7 @@ public class SimpleGunpowderConfig {
     }
 
     public static void load() {
-        Path configPath = Platform.get().getConfigDir().resolve("simplegunpowder.json");
+        Path configPath = configPath();
 
         String saved = null;
         try {
@@ -62,11 +80,14 @@ public class SimpleGunpowderConfig {
     }
 
     public static void save() {
-        Path configPath = Platform.get().getConfigDir().resolve("simplegunpowder.json");
-        try (Writer writer = Files.newBufferedWriter(configPath)) {
+        try (Writer writer = Files.newBufferedWriter(configPath())) {
             GSON.toJson(INSTANCE, writer);
         } catch (IOException e) {
             SimpleGunpowder.LOGGER.error("Could not save config", e);
         }
+    }
+
+    private static Path configPath() {
+        return Platform.get().getConfigDir().resolve(FILE_NAME);
     }
 }

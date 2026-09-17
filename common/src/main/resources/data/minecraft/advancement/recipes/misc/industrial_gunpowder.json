@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_the_recipe": {
-      "conditions": { "recipe": "simplegunpowder:industrial_gunpowder" },
+      "conditions": { "recipes": "simplegunpowder:industrial_gunpowder" },
       "trigger": "minecraft:recipe_unlocked"
     },
     "has_coal_block": {

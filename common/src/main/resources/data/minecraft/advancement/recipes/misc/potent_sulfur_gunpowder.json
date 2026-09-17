@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_the_recipe": {
-      "conditions": { "recipe": "simplegunpowder:potent_sulfur_gunpowder" },
+      "conditions": { "recipes": "simplegunpowder:potent_sulfur_gunpowder" },
       "trigger": "minecraft:recipe_unlocked"
     },
     "has_potent_sulfur": {

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "criteria": {
     "has_the_recipe": {
-      "conditions": { "recipe": "simplegunpowder:nether_medium_gunpowder" },
+      "conditions": { "recipes": "simplegunpowder:nether_medium_gunpowder" },
       "trigger": "minecraft:recipe_unlocked"
     },
     "has_magma_block": {

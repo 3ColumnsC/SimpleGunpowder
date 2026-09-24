@@ -1,6 +1,6 @@
 # Simple Gunpowder
 
-Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
+Adds gunpowder recipes, villager trades, piglin bartering, Abandoned Camps and End City loot, including bulk recipes for large amounts of gunpowder — ideal for fireworks and TNT, without relying on creeper farms or mob grinding.
 
 8 Progression-Ready Overworld & Nether recipes.
 
@@ -49,6 +49,16 @@ Novice Fletcher and Cleric villagers can offer the following trades:
 |-------|-------|
 | 2 Emeralds | 10 Gunpowder |
 | 1 Sulfur + 1 Cinnabar | 6 Gunpowder |
+
+### 🏛️ Abandoned Camps (26.3+)
+
+Abandoned Camps containers have a chance to contain gunpowder, scaled by tier:
+
+| Container | Gunpowder |
+|-----------|-----------|
+| Barrel | 4–10 |
+| Chest | 12–18 |
+| Copper Chest | 24–32 |
 
 ### 🐷 Piglin Bartering
 

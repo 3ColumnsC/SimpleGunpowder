@@ -9,7 +9,7 @@ version = "${file.jarVersion}"
 displayName = "Simple Gunpowder"
 authors = "3C Team"
 description = '''
-Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder.
+Adds gunpowder recipes, villager trades, piglin bartering, Abandoned Camps and End City loot, including bulk recipes for large amounts of gunpowder.
 '''
 iconFile = "assets/simplegunpowder/icon.png"
 bannerFile = "assets/simplegunpowder/icon.png"

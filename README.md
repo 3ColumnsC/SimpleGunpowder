@@ -50,7 +50,7 @@ Novice Fletcher and Cleric villagers can offer the following trades:
 | 2 Emeralds | 10 Gunpowder |
 | 1 Sulfur + 1 Cinnabar | 6 Gunpowder |
 
-### 🏛️ Abandoned Camps (26.3+)
+### 🏕️ Abandoned Camps (26.3+)
 
 Abandoned Camps containers have a chance to contain gunpowder, scaled by tier:
 
@@ -110,6 +110,12 @@ Available options:
 ### Forge
 
 * Java 17 or newer
+
+---
+
+## 💬 Suggestions & Issues
+
+If you have an idea, a suggestion, or found a bug, feel free to leave a comment on the CurseForge page or open an issue on the GitHub repository.
 
 ---
 

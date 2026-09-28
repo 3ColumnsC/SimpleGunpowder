@@ -56,6 +56,38 @@ public class SimpleGunpowderConfig {
         return enableNetherMediumRecipe;
     }
 
+    public void setSmallCraftingEnabled(boolean enabled) {
+        this.enableSmallCrafting = enabled;
+    }
+
+    public void setMediumCraftingEnabled(boolean enabled) {
+        this.enableMediumCrafting = enabled;
+    }
+
+    public void setLargeCraftingEnabled(boolean enabled) {
+        this.enableLargeCrafting = enabled;
+    }
+
+    public void setIndustrialCraftingEnabled(boolean enabled) {
+        this.enableIndustrialCrafting = enabled;
+    }
+
+    public void setRefinedSulfurRecipeEnabled(boolean enabled) {
+        this.enableRefinedSulfurRecipe = enabled;
+    }
+
+    public void setPotentSulfurRecipeEnabled(boolean enabled) {
+        this.enablePotentSulfurRecipe = enabled;
+    }
+
+    public void setNetherSmallRecipeEnabled(boolean enabled) {
+        this.enableNetherSmallRecipe = enabled;
+    }
+
+    public void setNetherMediumRecipeEnabled(boolean enabled) {
+        this.enableNetherMediumRecipe = enabled;
+    }
+
     public boolean isEnabled(String recipePath) {
         RecipeToggle toggle = RecipeToggle.fromPath(recipePath);
         return toggle == null || toggle.isEnabled(this);

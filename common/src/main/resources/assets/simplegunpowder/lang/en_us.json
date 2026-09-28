@@ -1,4 +1,16 @@
 {
   "modmenu.descriptionTranslation.simplegunpowder": "Adds gunpowder recipes, villager trades, piglin bartering and End City loot, including bulk recipes for large amounts of gunpowder.",
+  "simplegunpowder.config.apply": "Apply",
+  "simplegunpowder.config.industrial": "Enable Industrial Gunpowder recipe",
+  "simplegunpowder.config.large": "Enable Large Gunpowder recipe",
+  "simplegunpowder.config.medium": "Enable Medium Gunpowder recipe",
+  "simplegunpowder.config.nether_medium": "Enable Nether Medium recipe",
+  "simplegunpowder.config.nether_small": "Enable Nether Small recipe",
+  "simplegunpowder.config.potent_sulfur": "Enable Potent Sulfur recipe",
+  "simplegunpowder.config.refined_sulfur": "Enable Refined Sulfur recipe",
+  "simplegunpowder.config.reload_hint": "This action requires leaving your Minecraft world or restarting the game.",
+  "simplegunpowder.config.small": "Enable Small Gunpowder recipe",
+  "simplegunpowder.config.tab.general": "General",
+  "simplegunpowder.config.title": "Simple Gunpowder",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

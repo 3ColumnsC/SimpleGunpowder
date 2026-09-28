@@ -19,6 +19,9 @@
 	"entrypoints": {
 		"main": [
 			"com.threecolumnsstudio.simplegunpowder.fabric.SimpleGunpowderFabric"
+		],
+		"modmenu": [
+			"com.threecolumnsstudio.simplegunpowder.fabric.screen.SimpleGunpowderModMenu"
 		]
 	},
 	"mixins": [
@@ -29,5 +32,8 @@
 		"minecraft": "~26.3",
 		"java": ">=25",
 		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
 	}
 }

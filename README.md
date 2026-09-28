@@ -50,7 +50,7 @@ Novice Fletcher and Cleric villagers can offer the following trades:
 | 2 Emeralds | 10 Gunpowder |
 | 1 Sulfur + 1 Cinnabar | 6 Gunpowder |
 
-### 🏛️ Abandoned Camps (26.3+)
+### 🏕️ Abandoned Camps (26.3+)
 
 Abandoned Camps containers have a chance to contain gunpowder, scaled by tier:
 
@@ -72,11 +72,11 @@ End city treasure chests have a chance to contain gunpowder (48–64).
 
 ## ⚙️ Configuration
 
-After launching the game once, a configuration file will be generated:
+The easiest way to configure SimpleGunpowder is in-game: open **Mod Menu** (Fabric) or the **Config** button in the mods list (NeoForge).
 
-```text
-config/simplegunpowder.json
-```
+Each recipe can be individually toggled on or off. Leave your Minecraft world or restart the game for the changes to apply.
+
+On a dedicated server, edit `config/simplegunpowder.json` on the server and restart the server.
 
 Available options:
 
@@ -110,6 +110,12 @@ Available options:
 ### Forge
 
 * Java 17 or newer
+
+---
+
+## 💬 Suggestions & Issues
+
+If you have an idea, a suggestion, or found a bug, feel free to leave a comment on the CurseForge page or open an issue on the GitHub repository.
 
 ---
 

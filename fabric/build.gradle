@@ -3,6 +3,13 @@ plugins {
     id 'maven-publish'
 }
 
+repositories {
+    maven {
+        name = 'TerraformersMC'
+        url = 'https://maven.terraformersmc.com/releases/'
+    }
+}
+
 base {
     archivesName = "simplegunpowder-fabric"
 }
@@ -27,6 +34,7 @@ dependencies {
 
     implementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    implementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 
     // Common classes
     implementation project(':common')

@@ -72,11 +72,11 @@ End city treasure chests have a chance to contain gunpowder (48–64).
 
 ## ⚙️ Configuration
 
-After launching the game once, a configuration file will be generated:
+The easiest way to configure SimpleGunpowder is in-game: open **Mod Menu** (Fabric) or the **Config** button in the mods list (NeoForge).
 
-```text
-config/simplegunpowder.json
-```
+Each recipe can be individually toggled on or off. Leave your Minecraft world or restart the game for the changes to apply.
+
+On a dedicated server, edit `config/simplegunpowder.json` on the server and restart the server.
 
 Available options:
 

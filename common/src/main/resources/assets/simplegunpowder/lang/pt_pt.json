@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Adiciona receitas de pólvora, comércio de aldeões, troca de porcos e saques de End City, incluindo receitas em massa para grandes quantidades de pólvora.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Adiciona receitas de pólvora, comércio de aldeões, troca com piglins e saque da Cidade do End, incluindo receitas em massa para grandes quantidades de pólvora.",
+  "simplegunpowder.config.apply": "Aplicar",
+  "simplegunpowder.config.industrial": "Ativar receita de pólvora industrial",
+  "simplegunpowder.config.large": "Ativar receita de pólvora grande",
+  "simplegunpowder.config.medium": "Ativar receita de pólvora média",
+  "simplegunpowder.config.nether_medium": "Ativar receita média do Nether",
+  "simplegunpowder.config.nether_small": "Ativar receita pequena do Nether",
+  "simplegunpowder.config.potent_sulfur": "Ativar receita de enxofre potente",
+  "simplegunpowder.config.refined_sulfur": "Ativar receita de enxofre refinado",
+  "simplegunpowder.config.reload_hint": "Esta ação exige sair do seu mundo de Minecraft ou reiniciar o jogo.",
+  "simplegunpowder.config.small": "Ativar receita de pólvora pequena",
+  "simplegunpowder.config.tab.general": "Geral",
+  "simplegunpowder.config.title": "Pólvora Simples",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "添加火药配方、村民交易、猪灵易货贸易和末地城战利品，包括大量火药的散装配方。",
+  "modmenu.descriptionTranslation.simplegunpowder": "添加火药配方、村民交易、猪灵以物易物和末地城战利品，包括用于大量火药的批量配方。",
+  "simplegunpowder.config.apply": "应用",
+  "simplegunpowder.config.industrial": "启用工业火药配方",
+  "simplegunpowder.config.large": "启用大火药配方",
+  "simplegunpowder.config.medium": "启用中火药配方",
+  "simplegunpowder.config.nether_medium": "启用下界中等配方",
+  "simplegunpowder.config.nether_small": "启用下界小型配方",
+  "simplegunpowder.config.potent_sulfur": "启用强效硫磺配方",
+  "simplegunpowder.config.refined_sulfur": "启用精炼硫磺配方",
+  "simplegunpowder.config.reload_hint": "此操作需要退出你的 Minecraft 世界或重启游戏。",
+  "simplegunpowder.config.small": "启用小火药配方",
+  "simplegunpowder.config.tab.general": "通用",
+  "simplegunpowder.config.title": "简易火药",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

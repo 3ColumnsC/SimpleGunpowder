@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Přidává recepty na střelný prach, obchody vesničanů, výměnu prasat a kořist End City, včetně hromadných receptů na velké množství střelného prachu.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Přidává recepty na střelný prach, obchodování s vesničany, výměnu s pigliny a kořist z End City, včetně hromadných receptů na velká množství střelného prachu.",
+  "simplegunpowder.config.apply": "Použít",
+  "simplegunpowder.config.industrial": "Povolit recept na průmyslový střelný prach",
+  "simplegunpowder.config.large": "Povolit recept na velký střelný prach",
+  "simplegunpowder.config.medium": "Povolit recept na střední střelný prach",
+  "simplegunpowder.config.nether_medium": "Povolit střední recept z Netheru",
+  "simplegunpowder.config.nether_small": "Povolit malý recept z Netheru",
+  "simplegunpowder.config.potent_sulfur": "Povolit recept na silnou síru",
+  "simplegunpowder.config.refined_sulfur": "Povolit recept na rafinovanou síru",
+  "simplegunpowder.config.reload_hint": "Tato akce vyžaduje opuštění tvého světa v Minecraftu nebo restart hry.",
+  "simplegunpowder.config.small": "Povolit recept na malý střelný prach",
+  "simplegunpowder.config.tab.general": "Obecné",
+  "simplegunpowder.config.title": "Jednoduchý Střelný Prach",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

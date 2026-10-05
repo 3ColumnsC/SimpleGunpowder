@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Dodaje przepisy na proch, handel wieśniakami, handel barterowy piglinami i łupy z End City, w tym zbiorcze przepisy na duże ilości prochu.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Dodaje przepisy na proch, handel z wieśniakami, wymianę z piglinami i łupy z Miasta Endu, w tym przepisy zbiorcze na duże ilości prochu.",
+  "simplegunpowder.config.apply": "Zastosuj",
+  "simplegunpowder.config.industrial": "Włącz przepis na przemysłowy proch",
+  "simplegunpowder.config.large": "Włącz przepis na duży proch",
+  "simplegunpowder.config.medium": "Włącz przepis na średni proch",
+  "simplegunpowder.config.nether_medium": "Włącz średni przepis z Netheru",
+  "simplegunpowder.config.nether_small": "Włącz mały przepis z Netheru",
+  "simplegunpowder.config.potent_sulfur": "Włącz przepis na mocną siarkę",
+  "simplegunpowder.config.refined_sulfur": "Włącz przepis na rafinowaną siarkę",
+  "simplegunpowder.config.reload_hint": "Ta czynność wymaga opuszczenia świata Minecraft lub ponownego uruchomienia gry.",
+  "simplegunpowder.config.small": "Włącz przepis na mały proch",
+  "simplegunpowder.config.tab.general": "Ogólne",
+  "simplegunpowder.config.title": "Prosty Proch",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

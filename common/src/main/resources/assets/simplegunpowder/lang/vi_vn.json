@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Thêm công thức thuốc súng, giao dịch với dân làng, trao đổi với piglin và chiến lợi phẩm Thành phố End, bao gồm công thức hàng loạt cho lượng lớn thuốc súng.",
+  "simplegunpowder.config.apply": "Áp dụng",
+  "simplegunpowder.config.industrial": "Bật công thức thuốc súng công nghiệp",
+  "simplegunpowder.config.large": "Bật công thức thuốc súng lớn",
+  "simplegunpowder.config.medium": "Bật công thức thuốc súng vừa",
+  "simplegunpowder.config.nether_medium": "Bật công thức Nether vừa",
+  "simplegunpowder.config.nether_small": "Bật công thức Nether nhỏ",
+  "simplegunpowder.config.potent_sulfur": "Bật công thức lưu huỳnh mạnh",
+  "simplegunpowder.config.refined_sulfur": "Bật công thức lưu huỳnh tinh luyện",
+  "simplegunpowder.config.reload_hint": "Hành động này yêu cầu bạn rời khỏi thế giới Minecraft hoặc khởi động lại trò chơi.",
+  "simplegunpowder.config.small": "Bật công thức thuốc súng nhỏ",
+  "simplegunpowder.config.tab.general": "Chung",
+  "simplegunpowder.config.title": "Thuốc Súng Đơn Giản",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

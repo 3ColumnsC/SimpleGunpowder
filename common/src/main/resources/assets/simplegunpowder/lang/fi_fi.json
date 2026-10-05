@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Lisää ruutireseptejä, kyläläisten kauppaa, piglin-vaihtoa ja End City -saalista, mukaan lukien massaerät suurille ruutimäärille.",
+  "simplegunpowder.config.apply": "Käytä",
+  "simplegunpowder.config.industrial": "Ota teollinen ruutiresepti käyttöön",
+  "simplegunpowder.config.large": "Ota suuri ruutiresepti käyttöön",
+  "simplegunpowder.config.medium": "Ota keskikokoinen ruutiresepti käyttöön",
+  "simplegunpowder.config.nether_medium": "Ota Netherin keskikokoinen resepti käyttöön",
+  "simplegunpowder.config.nether_small": "Ota Netherin pieni resepti käyttöön",
+  "simplegunpowder.config.potent_sulfur": "Ota vahva rikkiresepti käyttöön",
+  "simplegunpowder.config.refined_sulfur": "Ota puhdistettu rikkiresepti käyttöön",
+  "simplegunpowder.config.reload_hint": "Tämä toiminto edellyttää Minecraft-maailmasta poistumista tai pelin uudelleenkäynnistystä.",
+  "simplegunpowder.config.small": "Ota pieni ruutiresepti käyttöön",
+  "simplegunpowder.config.tab.general": "Yleiset",
+  "simplegunpowder.config.title": "Yksinkertainen Ruuti",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

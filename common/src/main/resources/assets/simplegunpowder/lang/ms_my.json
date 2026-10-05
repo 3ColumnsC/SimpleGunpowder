@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Menambah resipi serbuk letupan, perdagangan penduduk kampung, tukar barang piglin dan jarahan End City, termasuk resipi pukal untuk kuantiti serbuk letupan yang besar.",
+  "simplegunpowder.config.apply": "Guna",
+  "simplegunpowder.config.industrial": "Dayakan resipi serbuk letupan industri",
+  "simplegunpowder.config.large": "Dayakan resipi serbuk letupan besar",
+  "simplegunpowder.config.medium": "Dayakan resipi serbuk letupan sederhana",
+  "simplegunpowder.config.nether_medium": "Dayakan resipi Nether sederhana",
+  "simplegunpowder.config.nether_small": "Dayakan resipi Nether kecil",
+  "simplegunpowder.config.potent_sulfur": "Dayakan resipi sulfur kuat",
+  "simplegunpowder.config.refined_sulfur": "Dayakan resipi sulfur ditapis",
+  "simplegunpowder.config.reload_hint": "Tindakan ini memerlukan anda keluar dari dunia Minecraft anda atau memulakan semula permainan.",
+  "simplegunpowder.config.small": "Dayakan resipi serbuk letupan kecil",
+  "simplegunpowder.config.tab.general": "Umum",
+  "simplegunpowder.config.title": "Serbuk Letupan Mudah",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

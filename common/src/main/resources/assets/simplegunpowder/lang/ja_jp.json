@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "火薬のレシピ、村人との取引、ピグリンの物々交換、エンドシティの戦利品を追加します。大量の火薬を作る一括レシピも含まれます。",
+  "simplegunpowder.config.apply": "適用",
+  "simplegunpowder.config.industrial": "工業火薬のレシピを有効化",
+  "simplegunpowder.config.large": "大火薬のレシピを有効化",
+  "simplegunpowder.config.medium": "中火薬のレシピを有効化",
+  "simplegunpowder.config.nether_medium": "ネザー中レシピを有効化",
+  "simplegunpowder.config.nether_small": "ネザー小レシピを有効化",
+  "simplegunpowder.config.potent_sulfur": "強力な硫黄のレシピを有効化",
+  "simplegunpowder.config.refined_sulfur": "精製硫黄のレシピを有効化",
+  "simplegunpowder.config.reload_hint": "この操作にはMinecraftのワールドを退出するか、ゲームを再起動する必要があります。",
+  "simplegunpowder.config.small": "小火薬のレシピを有効化",
+  "simplegunpowder.config.tab.general": "一般",
+  "simplegunpowder.config.title": "シンプル火薬",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

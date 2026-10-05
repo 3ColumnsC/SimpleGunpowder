@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Prideda parako receptus, prekybą su gyventojais, mainus su piglinais ir Endo miesto grobį, įskaitant masinius receptus dideliems parako kiekiams.",
+  "simplegunpowder.config.apply": "Taikyti",
+  "simplegunpowder.config.industrial": "Įjungti pramoninio parako receptą",
+  "simplegunpowder.config.large": "Įjungti didelio parako receptą",
+  "simplegunpowder.config.medium": "Įjungti vidutinio parako receptą",
+  "simplegunpowder.config.nether_medium": "Įjungti vidutinį Nether receptą",
+  "simplegunpowder.config.nether_small": "Įjungti mažą Nether receptą",
+  "simplegunpowder.config.potent_sulfur": "Įjungti stipraus sieros receptą",
+  "simplegunpowder.config.refined_sulfur": "Įjungti rafinuoto sieros receptą",
+  "simplegunpowder.config.reload_hint": "Šis veiksmas reikalauja išeiti iš savo Minecraft pasaulio arba iš naujo paleisti žaidimą.",
+  "simplegunpowder.config.small": "Įjungti mažo parako receptą",
+  "simplegunpowder.config.tab.general": "Bendra",
+  "simplegunpowder.config.title": "Paprastas Parakas",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

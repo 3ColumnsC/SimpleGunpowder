@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Dodaje recepte za barut, trgovinu sa seljanima, razmjenu s piglinima i plijen iz End Cityja, uključujući skupne recepte za velike količine baruta.",
+  "simplegunpowder.config.apply": "Primijeni",
+  "simplegunpowder.config.industrial": "Omogući recept za industrijski barut",
+  "simplegunpowder.config.large": "Omogući recept za veliki barut",
+  "simplegunpowder.config.medium": "Omogući recept za srednji barut",
+  "simplegunpowder.config.nether_medium": "Omogući srednji Nether recept",
+  "simplegunpowder.config.nether_small": "Omogući mali Nether recept",
+  "simplegunpowder.config.potent_sulfur": "Omogući recept za snažni sumpor",
+  "simplegunpowder.config.refined_sulfur": "Omogući recept za rafinirani sumpor",
+  "simplegunpowder.config.reload_hint": "Ova radnja zahtijeva napuštanje tvog Minecraft svijeta ili ponovno pokretanje igre.",
+  "simplegunpowder.config.small": "Omogući recept za mali barut",
+  "simplegunpowder.config.tab.general": "Općenito",
+  "simplegunpowder.config.title": "Jednostavni Barut",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

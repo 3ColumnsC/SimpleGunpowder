@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Adaugă rețete de pulbere de pușcă, comerț cu săteni, troc cu piglini și pradă din Orașul End, inclusiv rețete în vrac pentru cantități mari de pulbere de pușcă.",
+  "simplegunpowder.config.apply": "Aplică",
+  "simplegunpowder.config.industrial": "Activează rețeta de pulbere de pușcă industrială",
+  "simplegunpowder.config.large": "Activează rețeta de pulbere de pușcă mare",
+  "simplegunpowder.config.medium": "Activează rețeta de pulbere de pușcă medie",
+  "simplegunpowder.config.nether_medium": "Activează rețeta medie din Nether",
+  "simplegunpowder.config.nether_small": "Activează rețeta mică din Nether",
+  "simplegunpowder.config.potent_sulfur": "Activează rețeta de sulf puternic",
+  "simplegunpowder.config.refined_sulfur": "Activează rețeta de sulf rafinat",
+  "simplegunpowder.config.reload_hint": "Această acțiune necesită părăsirea lumii tale Minecraft sau repornirea jocului.",
+  "simplegunpowder.config.small": "Activează rețeta de pulbere de pușcă mică",
+  "simplegunpowder.config.tab.general": "General",
+  "simplegunpowder.config.title": "Pulbere de Pușcă Simplă",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

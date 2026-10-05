@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Ajoute des recettes de poudre à canon, des échanges de villageois, du troc de piglins et du butin de End City, y compris des recettes en gros pour de grandes quantités de poudre à canon.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Ajoute des recettes de poudre à canon, des échanges de villageois, du troc de piglin et du butin de la Cité de l'End, y compris des recettes en masse pour de grandes quantités de poudre à canon.",
+  "simplegunpowder.config.apply": "Appliquer",
+  "simplegunpowder.config.industrial": "Activer la recette de poudre à canon industrielle",
+  "simplegunpowder.config.large": "Activer la recette de grande poudre à canon",
+  "simplegunpowder.config.medium": "Activer la recette de poudre à canon moyenne",
+  "simplegunpowder.config.nether_medium": "Activer la recette moyenne du Nether",
+  "simplegunpowder.config.nether_small": "Activer la recette petite du Nether",
+  "simplegunpowder.config.potent_sulfur": "Activer la recette de soufre puissant",
+  "simplegunpowder.config.refined_sulfur": "Activer la recette de soufre raffiné",
+  "simplegunpowder.config.reload_hint": "Cette action nécessite de quitter votre monde Minecraft ou de redémarrer le jeu.",
+  "simplegunpowder.config.small": "Activer la recette de petite poudre à canon",
+  "simplegunpowder.config.tab.general": "Général",
+  "simplegunpowder.config.title": "Poudre à canon simple",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Pievieno šaujampulvera receptes, ciema iedzīvotāju tirdzniecību, cūku maiņas darījumus un End City laupījumu, tostarp lielapjoma receptes lieliem šaujampulvera daudzumiem.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Pievieno šaujampulvera receptes, tirdzniecību ar iedzīvotājiem, maiņu ar pigliniem un End City laupījumu, tostarp masveida receptes lieliem šaujampulvera daudzumiem.",
+  "simplegunpowder.config.apply": "Lietot",
+  "simplegunpowder.config.industrial": "Iespējot rūpnieciskā šaujampulvera recepti",
+  "simplegunpowder.config.large": "Iespējot lielā šaujampulvera recepti",
+  "simplegunpowder.config.medium": "Iespējot vidējā šaujampulvera recepti",
+  "simplegunpowder.config.nether_medium": "Iespējot vidējo Nether recepti",
+  "simplegunpowder.config.nether_small": "Iespējot mazo Nether recepti",
+  "simplegunpowder.config.potent_sulfur": "Iespējot spēcīgā sēra recepti",
+  "simplegunpowder.config.refined_sulfur": "Iespējot rafinētā sēra recepti",
+  "simplegunpowder.config.reload_hint": "Šī darbība prasa iziet no savas Minecraft pasaules vai restartēt spēli.",
+  "simplegunpowder.config.small": "Iespējot mazo šaujampulvera recepti",
+  "simplegunpowder.config.tab.general": "Vispārīgi",
+  "simplegunpowder.config.title": "Vienkāršs Šaujampulveris",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

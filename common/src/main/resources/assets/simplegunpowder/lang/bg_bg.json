@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Добавя рецепти за барут, търговия със селяни, размяна на прасета и плячка от Крайния град, включително групови рецепти за големи количества барут.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Добавя рецепти за барут, търговия със селяни, размяна с пиглини и плячка от Енд града, включително масови рецепти за големи количества барут.",
+  "simplegunpowder.config.apply": "Приложи",
+  "simplegunpowder.config.industrial": "Активирай рецептата за промишлен барут",
+  "simplegunpowder.config.large": "Активирай рецептата за голям барут",
+  "simplegunpowder.config.medium": "Активирай рецептата за среден барут",
+  "simplegunpowder.config.nether_medium": "Активирай средната рецепта от Недъра",
+  "simplegunpowder.config.nether_small": "Активирай малката рецепта от Недъра",
+  "simplegunpowder.config.potent_sulfur": "Активирай рецептата за силна сяра",
+  "simplegunpowder.config.refined_sulfur": "Активирай рецептата за рафинирана сяра",
+  "simplegunpowder.config.reload_hint": "Това действие изисква да напуснеш своя свят в Minecraft или да рестартираш играта.",
+  "simplegunpowder.config.small": "Активирай рецептата за малък барут",
+  "simplegunpowder.config.tab.general": "Общи",
+  "simplegunpowder.config.title": "Прост Барут",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

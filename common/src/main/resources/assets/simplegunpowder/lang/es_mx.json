@@ -1,4 +1,16 @@
 {
   "modmenu.descriptionTranslation.simplegunpowder": "Agrega recetas de pólvora, intercambios de aldeanos, trueque de piglin y botín de End City, incluidas recetas a granel para grandes cantidades de pólvora.",
+  "simplegunpowder.config.apply": "Aplicar",
+  "simplegunpowder.config.industrial": "Activar la receta de pólvora industrial",
+  "simplegunpowder.config.large": "Activar la receta de pólvora grande",
+  "simplegunpowder.config.medium": "Activar la receta de pólvora mediana",
+  "simplegunpowder.config.nether_medium": "Activar la receta del Nether mediana",
+  "simplegunpowder.config.nether_small": "Activar la receta del Nether pequeña",
+  "simplegunpowder.config.potent_sulfur": "Activar la receta de azufre potente",
+  "simplegunpowder.config.refined_sulfur": "Activar la receta de azufre refinado",
+  "simplegunpowder.config.reload_hint": "Esta acción requiere salir de tu mundo de Minecraft o reiniciar el juego.",
+  "simplegunpowder.config.small": "Activar la receta de pólvora pequeña",
+  "simplegunpowder.config.tab.general": "General",
+  "simplegunpowder.config.title": "Pólvora Simple",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

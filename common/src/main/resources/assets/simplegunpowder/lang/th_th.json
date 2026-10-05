@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "เพิ่มสูตรดินปืน การค้าขายของชาวบ้าน การแลกเปลี่ยน Piglin และการปล้น End City รวมถึงสูตรสำหรับดินปืนจำนวนมาก",
+  "modmenu.descriptionTranslation.simplegunpowder": "เพิ่มสูตรดินปืน การค้าขายกับชาวบ้าน การแลกเปลี่ยนกับพิกลิน และของปล้นจากเมืองเอนด์ รวมถึงสูตรแบบเป็นชุดสำหรับดินปืนปริมาณมาก",
+  "simplegunpowder.config.apply": "นำไปใช้",
+  "simplegunpowder.config.industrial": "เปิดใช้สูตรดินปืนอุตสาหกรรม",
+  "simplegunpowder.config.large": "เปิดใช้สูตรดินปืนขนาดใหญ่",
+  "simplegunpowder.config.medium": "เปิดใช้สูตรดินปืนขนาดกลาง",
+  "simplegunpowder.config.nether_medium": "เปิดใช้สูตรเนเธอร์ขนาดกลาง",
+  "simplegunpowder.config.nether_small": "เปิดใช้สูตรเนเธอร์ขนาดเล็ก",
+  "simplegunpowder.config.potent_sulfur": "เปิดใช้สูตรกำมะถันเข้มข้น",
+  "simplegunpowder.config.refined_sulfur": "เปิดใช้สูตรกำมะถันบริสุทธิ์",
+  "simplegunpowder.config.reload_hint": "การดำเนินการนี้ต้องออกจากโลก Minecraft ของคุณหรือรีสตาร์ทเกม",
+  "simplegunpowder.config.small": "เปิดใช้สูตรดินปืนขนาดเล็ก",
+  "simplegunpowder.config.tab.general": "ทั่วไป",
+  "simplegunpowder.config.title": "ดินปืนเรียบง่าย",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Voegt buskruitrecepten, dorpelingenhandel, varkensruil en End City-buit toe, inclusief bulkrecepten voor grote hoeveelheden buskruit.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Voegt buskruitrecepten, dorpelingenhandel, piglin-ruil en End City-buit toe, inclusief bulkrecepten voor grote hoeveelheden buskruit.",
+  "simplegunpowder.config.apply": "Toepassen",
+  "simplegunpowder.config.industrial": "Industrieel buskruitrecept inschakelen",
+  "simplegunpowder.config.large": "Groot buskruitrecept inschakelen",
+  "simplegunpowder.config.medium": "Middelgroot buskruitrecept inschakelen",
+  "simplegunpowder.config.nether_medium": "Middelgroot Nether-recept inschakelen",
+  "simplegunpowder.config.nether_small": "Klein Nether-recept inschakelen",
+  "simplegunpowder.config.potent_sulfur": "Recept voor sterk zwavel inschakelen",
+  "simplegunpowder.config.refined_sulfur": "Recept voor geraffineerd zwavel inschakelen",
+  "simplegunpowder.config.reload_hint": "Deze actie vereist dat je je Minecraft-wereld verlaat of het spel opnieuw opstart.",
+  "simplegunpowder.config.small": "Klein buskruitrecept inschakelen",
+  "simplegunpowder.config.tab.general": "Algemeen",
+  "simplegunpowder.config.title": "Simpel Buskruit",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

@@ -1,4 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Lägger till krutrecept, byinbyten, byteshandel med svin och End City-byten, inklusive bulkrecept för stora mängder krut.",
+  "modmenu.descriptionTranslation.simplegunpowder": "Lägger till krutrecept, handel med bybor, byteshandel med pigliner och byte från End City, inklusive massrecept för stora mängder krut.",
+  "simplegunpowder.config.apply": "Verkställ",
+  "simplegunpowder.config.industrial": "Aktivera recept för industriellt krut",
+  "simplegunpowder.config.large": "Aktivera recept för stort krut",
+  "simplegunpowder.config.medium": "Aktivera recept för mellanstort krut",
+  "simplegunpowder.config.nether_medium": "Aktivera mellanstort Nether-recept",
+  "simplegunpowder.config.nether_small": "Aktivera litet Nether-recept",
+  "simplegunpowder.config.potent_sulfur": "Aktivera recept för stark svavel",
+  "simplegunpowder.config.refined_sulfur": "Aktivera recept för raffinerad svavel",
+  "simplegunpowder.config.reload_hint": "Denna åtgärd kräver att du lämnar din Minecraft-värld eller startar om spelet.",
+  "simplegunpowder.config.small": "Aktivera recept för litet krut",
+  "simplegunpowder.config.tab.general": "Allmänt",
+  "simplegunpowder.config.title": "Enkelt Krut",
   "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

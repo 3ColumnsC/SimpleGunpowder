@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Tilføjer krudtopskrifter, landsbyboerhandler, byttehandel med svin og End City-bytte, inklusive bulkopskrifter på store mængder krudt."
+  "modmenu.descriptionTranslation.simplegunpowder": "Tilføjer krudtopskrifter, handel med landsbyboere, byttehandel med pigliner og bytte fra End City, inklusive masseopskrifter til store mængder krudt.",
+  "simplegunpowder.config.apply": "Anvend",
+  "simplegunpowder.config.industrial": "Aktivér opskrift på industrielt krudt",
+  "simplegunpowder.config.large": "Aktivér opskrift på stort krudt",
+  "simplegunpowder.config.medium": "Aktivér opskrift på mellemstort krudt",
+  "simplegunpowder.config.nether_medium": "Aktivér mellemstor Nether-opskrift",
+  "simplegunpowder.config.nether_small": "Aktivér lille Nether-opskrift",
+  "simplegunpowder.config.potent_sulfur": "Aktivér opskrift på stærk svovl",
+  "simplegunpowder.config.refined_sulfur": "Aktivér opskrift på raffineret svovl",
+  "simplegunpowder.config.reload_hint": "Denne handling kræver, at du forlader din Minecraft-verden eller genstarter spillet.",
+  "simplegunpowder.config.small": "Aktivér opskrift på småt krudt",
+  "simplegunpowder.config.tab.general": "Generelt",
+  "simplegunpowder.config.title": "Simpelt Krudt",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

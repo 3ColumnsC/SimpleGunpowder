@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Menambahkan resep bubuk mesiu, perdagangan penduduk desa, barter babi, dan jarahan Kota Akhir, termasuk resep massal untuk bubuk mesiu dalam jumlah besar."
+  "modmenu.descriptionTranslation.simplegunpowder": "Menambahkan resep mesiu, perdagangan penduduk desa, barter piglin, dan jarahan End City, termasuk resep massal untuk mesiu dalam jumlah besar.",
+  "simplegunpowder.config.apply": "Terapkan",
+  "simplegunpowder.config.industrial": "Aktifkan resep mesiu industri",
+  "simplegunpowder.config.large": "Aktifkan resep mesiu besar",
+  "simplegunpowder.config.medium": "Aktifkan resep mesiu sedang",
+  "simplegunpowder.config.nether_medium": "Aktifkan resep Nether sedang",
+  "simplegunpowder.config.nether_small": "Aktifkan resep Nether kecil",
+  "simplegunpowder.config.potent_sulfur": "Aktifkan resep belerang kuat",
+  "simplegunpowder.config.refined_sulfur": "Aktifkan resep belerang olahan",
+  "simplegunpowder.config.reload_hint": "Tindakan ini mengharuskanmu keluar dari dunia Minecraft atau memulai ulang permainan.",
+  "simplegunpowder.config.small": "Aktifkan resep mesiu kecil",
+  "simplegunpowder.config.tab.general": "Umum",
+  "simplegunpowder.config.title": "Mesiu Sederhana",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

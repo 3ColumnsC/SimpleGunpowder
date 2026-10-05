@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Προσθέτει συνταγές πυρίτιδας, εμπόριο χωρικών, ανταλλαγές γουρουνιών και λάφυρα στο End City, συμπεριλαμβανομένων μαζικών συνταγών για μεγάλες ποσότητες πυρίτιδας."
+  "modmenu.descriptionTranslation.simplegunpowder": "Προσθέτει συνταγές μπαρούτης, συναλλαγές με χωρικούς, ανταλλαγή με πίγκλιν και λάφυρα από την Πόλη του End, μαζί με μαζικές συνταγές για μεγάλες ποσότητες μπαρούτης.",
+  "simplegunpowder.config.apply": "Εφαρμογή",
+  "simplegunpowder.config.industrial": "Ενεργοποίηση συνταγής βιομηχανικής μπαρούτης",
+  "simplegunpowder.config.large": "Ενεργοποίηση συνταγής μεγάλης μπαρούτης",
+  "simplegunpowder.config.medium": "Ενεργοποίηση συνταγής μεσαίας μπαρούτης",
+  "simplegunpowder.config.nether_medium": "Ενεργοποίηση μεσαίας συνταγής Nether",
+  "simplegunpowder.config.nether_small": "Ενεργοποίηση μικρής συνταγής Nether",
+  "simplegunpowder.config.potent_sulfur": "Ενεργοποίηση συνταγής ισχυρού θείου",
+  "simplegunpowder.config.refined_sulfur": "Ενεργοποίηση συνταγής ραφιναρισμένου θείου",
+  "simplegunpowder.config.reload_hint": "Αυτή η ενέργεια απαιτεί να βγεις από τον κόσμο σου στο Minecraft ή να επανεκκινήσεις το παιχνίδι.",
+  "simplegunpowder.config.small": "Ενεργοποίηση συνταγής μικρής μπαρούτης",
+  "simplegunpowder.config.tab.general": "Γενικά",
+  "simplegunpowder.config.title": "Απλή Μπαρούτη",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

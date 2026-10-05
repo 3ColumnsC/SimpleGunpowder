@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Додає рецепти пороху, торгівлю жителів села, бартер на свині та здобич Крайнього міста, включно з масовими рецептами великої кількості пороху."
+  "modmenu.descriptionTranslation.simplegunpowder": "Додає рецепти пороху, торгівлю з селянами, обмін із піглінами та здобич із Міста Енду, включно з масовими рецептами для великої кількості пороху.",
+  "simplegunpowder.config.apply": "Застосувати",
+  "simplegunpowder.config.industrial": "Увімкнути рецепт промислового пороху",
+  "simplegunpowder.config.large": "Увімкнути рецепт великого пороху",
+  "simplegunpowder.config.medium": "Увімкнути рецепт середнього пороху",
+  "simplegunpowder.config.nether_medium": "Увімкнути середній рецепт Незера",
+  "simplegunpowder.config.nether_small": "Увімкнути малий рецепт Незера",
+  "simplegunpowder.config.potent_sulfur": "Увімкнути рецепт міцної сірки",
+  "simplegunpowder.config.refined_sulfur": "Увімкнути рецепт очищеної сірки",
+  "simplegunpowder.config.reload_hint": "Ця дія вимагає вийти зі свого світу Minecraft або перезапустити гру.",
+  "simplegunpowder.config.small": "Увімкнути рецепт малого пороху",
+  "simplegunpowder.config.tab.general": "Загальні",
+  "simplegunpowder.config.title": "Простий Порох",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

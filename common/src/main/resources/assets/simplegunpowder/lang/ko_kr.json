@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "대량의 화약 제조법을 포함하여 화약 제조법, 주민 거래, 피글린 물물교환, 엔드 시티 전리품을 추가합니다."
+  "modmenu.descriptionTranslation.simplegunpowder": "화약 제작법, 주민 거래, 피글린 물물교환, 엔드 도시 전리품을 추가하며, 대량의 화약을 위한 일괄 제작법도 포함합니다.",
+  "simplegunpowder.config.apply": "적용",
+  "simplegunpowder.config.industrial": "산업용 화약 제작법 활성화",
+  "simplegunpowder.config.large": "대형 화약 제작법 활성화",
+  "simplegunpowder.config.medium": "중형 화약 제작법 활성화",
+  "simplegunpowder.config.nether_medium": "네더 중형 제작법 활성화",
+  "simplegunpowder.config.nether_small": "네더 소형 제작법 활성화",
+  "simplegunpowder.config.potent_sulfur": "강력한 유황 제작법 활성화",
+  "simplegunpowder.config.refined_sulfur": "정제된 유황 제작법 활성화",
+  "simplegunpowder.config.reload_hint": "이 작업을 위해서는 Minecraft 세계에서 나가거나 게임을 다시 시작해야 합니다.",
+  "simplegunpowder.config.small": "소형 화약 제작법 활성화",
+  "simplegunpowder.config.tab.general": "일반",
+  "simplegunpowder.config.title": "간단한 화약",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

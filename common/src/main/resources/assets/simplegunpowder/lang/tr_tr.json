@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Büyük miktarlarda barut için toplu tarifler de dahil olmak üzere barut tarifleri, köylü ticareti, piglin takası ve End City ganimetini ekler."
+  "modmenu.descriptionTranslation.simplegunpowder": "Barut tarifleri, köylü ticareti, piglin takası ve End Şehri ganimeti ekler; büyük miktarda barut için toplu tarifler dahil.",
+  "simplegunpowder.config.apply": "Uygula",
+  "simplegunpowder.config.industrial": "Endüstriyel Barut tarifini etkinleştir",
+  "simplegunpowder.config.large": "Büyük Barut tarifini etkinleştir",
+  "simplegunpowder.config.medium": "Orta Barut tarifini etkinleştir",
+  "simplegunpowder.config.nether_medium": "Orta Nether tarifini etkinleştir",
+  "simplegunpowder.config.nether_small": "Küçük Nether tarifini etkinleştir",
+  "simplegunpowder.config.potent_sulfur": "Güçlü Kükürt tarifini etkinleştir",
+  "simplegunpowder.config.refined_sulfur": "Rafine Kükürt tarifini etkinleştir",
+  "simplegunpowder.config.reload_hint": "Bu işlem, Minecraft dünyandan çıkmanı veya oyunu yeniden başlatmanı gerektirir.",
+  "simplegunpowder.config.small": "Küçük Barut tarifini etkinleştir",
+  "simplegunpowder.config.tab.general": "Genel",
+  "simplegunpowder.config.title": "Basit Barut",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

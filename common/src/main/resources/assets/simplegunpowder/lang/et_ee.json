@@ -1,3 +1,16 @@
 {
-  "modmenu.descriptionTranslation.simplegunpowder": "Lisab püssirohu retsepte, külaelanike kauplemist, põrsaste vahetust ja End City rüüstamist, sealhulgas suurte püssirohukoguste hulgiretsepte."
+  "modmenu.descriptionTranslation.simplegunpowder": "Lisab püssirohuretseptid, külaelanikega kauplemise, piglinitega vahetamise ja End City saagi, sealhulgas hulgiretseptid suurte püssirohukoguste jaoks.",
+  "simplegunpowder.config.apply": "Rakenda",
+  "simplegunpowder.config.industrial": "Luba tööstusliku püssirohu retsept",
+  "simplegunpowder.config.large": "Luba suure püssirohu retsept",
+  "simplegunpowder.config.medium": "Luba keskmise püssirohu retsept",
+  "simplegunpowder.config.nether_medium": "Luba Netheri keskmine retsept",
+  "simplegunpowder.config.nether_small": "Luba Netheri väike retsept",
+  "simplegunpowder.config.potent_sulfur": "Luba tugeva väävli retsept",
+  "simplegunpowder.config.refined_sulfur": "Luba rafineeritud väävli retsept",
+  "simplegunpowder.config.reload_hint": "See toiming nõuab Minecrafti maailmast lahkumist või mängu taaskäivitamist.",
+  "simplegunpowder.config.small": "Luba väikese püssirohu retsept",
+  "simplegunpowder.config.tab.general": "Üldine",
+  "simplegunpowder.config.title": "Lihtne Püssirohi",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
 }

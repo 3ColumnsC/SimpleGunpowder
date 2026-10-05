@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Добавляет рецепты пороха, торговлю с жителями, обмен с пиглинами и добычу из Энд-города, включая массовые рецепты для больших количеств пороха.",
+  "simplegunpowder.config.apply": "Применить",
+  "simplegunpowder.config.industrial": "Включить рецепт промышленного пороха",
+  "simplegunpowder.config.large": "Включить рецепт большого пороха",
+  "simplegunpowder.config.medium": "Включить рецепт среднего пороха",
+  "simplegunpowder.config.nether_medium": "Включить средний рецепт Нижнего мира",
+  "simplegunpowder.config.nether_small": "Включить малый рецепт Нижнего мира",
+  "simplegunpowder.config.potent_sulfur": "Включить рецепт сильной серы",
+  "simplegunpowder.config.refined_sulfur": "Включить рецепт очищенной серы",
+  "simplegunpowder.config.reload_hint": "Это действие требует выхода из вашего мира Minecraft или перезапуска игры.",
+  "simplegunpowder.config.small": "Включить рецепт малого пороха",
+  "simplegunpowder.config.tab.general": "Общие",
+  "simplegunpowder.config.title": "Простой Порох",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

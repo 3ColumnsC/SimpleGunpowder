@@ -94,7 +94,7 @@ public class SimpleGunpowderConfig {
                 INSTANCE = new SimpleGunpowderConfig();
             }
         } catch (Exception e) {
-            SimpleGunpowder.LOGGER.warn("Could not read config, using defaults", e);
+            SimpleGunpowder.LOGGER.warn("Could not read config, using defaults ({})", e.getClass().getSimpleName());
             INSTANCE = new SimpleGunpowderConfig();
         }
 
@@ -107,7 +107,7 @@ public class SimpleGunpowderConfig {
         try (Writer writer = Files.newBufferedWriter(configPath())) {
             GSON.toJson(INSTANCE, writer);
         } catch (IOException e) {
-            SimpleGunpowder.LOGGER.error("Could not save config", e);
+            SimpleGunpowder.LOGGER.error("Could not save config ({})", e.getClass().getSimpleName());
         }
     }
 

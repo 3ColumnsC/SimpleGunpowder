@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Legger til kruttoppskrifter, handel med landsbyboere, byttehandel med pigliner og bytte fra End City, inkludert masseoppskrifter for store mengder krutt.",
+  "simplegunpowder.config.apply": "Bruk",
+  "simplegunpowder.config.industrial": "Aktiver oppskrift for industrielt krutt",
+  "simplegunpowder.config.large": "Aktiver oppskrift for stort krutt",
+  "simplegunpowder.config.medium": "Aktiver oppskrift for mellomstort krutt",
+  "simplegunpowder.config.nether_medium": "Aktiver mellomstor Nether-oppskrift",
+  "simplegunpowder.config.nether_small": "Aktiver liten Nether-oppskrift",
+  "simplegunpowder.config.potent_sulfur": "Aktiver oppskrift for sterk svovel",
+  "simplegunpowder.config.refined_sulfur": "Aktiver oppskrift for raffinert svovel",
+  "simplegunpowder.config.reload_hint": "Denne handlingen krever at du forlater Minecraft-verdenen din eller starter spillet på nytt.",
+  "simplegunpowder.config.small": "Aktiver oppskrift for lite krutt",
+  "simplegunpowder.config.tab.general": "Generelt",
+  "simplegunpowder.config.title": "Enkelt Krutt",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

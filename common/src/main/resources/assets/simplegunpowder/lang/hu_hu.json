@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Puskapor-recepteket, falusi kereskedelmet, piglin cserekereskedelmet és End City zsákmányt ad hozzá, beleértve a nagy mennyiségű puskaporhoz szükséges tömeges recepteket.",
+  "simplegunpowder.config.apply": "Alkalmaz",
+  "simplegunpowder.config.industrial": "Ipari puskapor recept engedélyezése",
+  "simplegunpowder.config.large": "Nagy puskapor recept engedélyezése",
+  "simplegunpowder.config.medium": "Közepes puskapor recept engedélyezése",
+  "simplegunpowder.config.nether_medium": "Közepes Nether recept engedélyezése",
+  "simplegunpowder.config.nether_small": "Kis Nether recept engedélyezése",
+  "simplegunpowder.config.potent_sulfur": "Erős kén recept engedélyezése",
+  "simplegunpowder.config.refined_sulfur": "Finomított kén recept engedélyezése",
+  "simplegunpowder.config.reload_hint": "Ehhez a művelethez el kell hagynod a Minecraft világodat, vagy újra kell indítanod a játékot.",
+  "simplegunpowder.config.small": "Kis puskapor recept engedélyezése",
+  "simplegunpowder.config.tab.general": "Általános",
+  "simplegunpowder.config.title": "Egyszerű Puskapor",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

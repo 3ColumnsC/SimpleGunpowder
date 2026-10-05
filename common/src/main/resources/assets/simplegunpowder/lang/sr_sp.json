@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "Додаје рецепте за барут, трговину са сељанима, размену са пиглинима и плен из Енд Ситија, укључујући масовне рецепте за велике количине барута.",
+  "simplegunpowder.config.apply": "Примени",
+  "simplegunpowder.config.industrial": "Омогући рецепт за индустријски барут",
+  "simplegunpowder.config.large": "Омогући рецепт за велики барут",
+  "simplegunpowder.config.medium": "Омогући рецепт за средњи барут",
+  "simplegunpowder.config.nether_medium": "Омогући средњи Недер рецепт",
+  "simplegunpowder.config.nether_small": "Омогући мали Недер рецепт",
+  "simplegunpowder.config.potent_sulfur": "Омогући рецепт за јак сумпор",
+  "simplegunpowder.config.refined_sulfur": "Омогући рецепт за рафинисани сумпор",
+  "simplegunpowder.config.reload_hint": "Ова радња захтева да напустиш свој Minecraft свет или поново покренеш игру.",
+  "simplegunpowder.config.small": "Омогући рецепт за мали барут",
+  "simplegunpowder.config.tab.general": "Опште",
+  "simplegunpowder.config.title": "Једноставан Барут",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "新增火藥配方、村民交易、豬布林以物易物和終界城戰利品，包括用於大量火藥的批量配方。",
+  "simplegunpowder.config.apply": "套用",
+  "simplegunpowder.config.industrial": "啟用工業火藥配方",
+  "simplegunpowder.config.large": "啟用大火藥配方",
+  "simplegunpowder.config.medium": "啟用中火藥配方",
+  "simplegunpowder.config.nether_medium": "啟用地獄中等配方",
+  "simplegunpowder.config.nether_small": "啟用地獄小型配方",
+  "simplegunpowder.config.potent_sulfur": "啟用強效硫磺配方",
+  "simplegunpowder.config.refined_sulfur": "啟用精煉硫磺配方",
+  "simplegunpowder.config.reload_hint": "此操作需要離開你的 Minecraft 世界或重新啟動遊戲。",
+  "simplegunpowder.config.small": "啟用小火藥配方",
+  "simplegunpowder.config.tab.general": "一般",
+  "simplegunpowder.config.title": "簡易火藥",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

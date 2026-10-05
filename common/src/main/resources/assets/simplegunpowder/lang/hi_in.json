@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.simplegunpowder": "बारूद के नुस्खे, ग्रामीणों से व्यापार, पिगलिन से वस्तु-विनिमय और एंड सिटी की लूट जोड़ता है, साथ ही बड़ी मात्रा में बारूद के लिए थोक नुस्खे भी।",
+  "simplegunpowder.config.apply": "लागू करें",
+  "simplegunpowder.config.industrial": "औद्योगिक बारूद नुस्खा सक्षम करें",
+  "simplegunpowder.config.large": "बड़ा बारूद नुस्खा सक्षम करें",
+  "simplegunpowder.config.medium": "मध्यम बारूद नुस्खा सक्षम करें",
+  "simplegunpowder.config.nether_medium": "नेदर मध्यम नुस्खा सक्षम करें",
+  "simplegunpowder.config.nether_small": "नेदर छोटा नुस्खा सक्षम करें",
+  "simplegunpowder.config.potent_sulfur": "शक्तिशाली गंधक नुस्खा सक्षम करें",
+  "simplegunpowder.config.refined_sulfur": "परिष्कृत गंधक नुस्खा सक्षम करें",
+  "simplegunpowder.config.reload_hint": "इस क्रिया के लिए आपको अपनी Minecraft दुनिया छोड़नी होगी या गेम को पुनः आरंभ करना होगा।",
+  "simplegunpowder.config.small": "छोटा बारूद नुस्खा सक्षम करें",
+  "simplegunpowder.config.tab.general": "सामान्य",
+  "simplegunpowder.config.title": "सरल बारूद",
+  "tag.item.simplegunpowder.sulfur_materials": "Sulfur Materials"
+}

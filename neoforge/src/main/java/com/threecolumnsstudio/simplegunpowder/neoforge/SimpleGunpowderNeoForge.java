@@ -2,17 +2,14 @@ package com.threecolumnsstudio.simplegunpowder.neoforge;
 
 import com.threecolumnsstudio.simplegunpowder.Platform;
 import com.threecolumnsstudio.simplegunpowder.SimpleGunpowder;
-import com.threecolumnsstudio.simplegunpowder.neoforge.screen.SimpleGunpowderConfigScreen;
 import net.minecraft.world.entity.npc.villager.VillagerProfession;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.loading.FMLEnvironment;
-import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 import java.util.Optional;
@@ -25,14 +22,8 @@ public class SimpleGunpowderNeoForge {
         SimpleGunpowder.init();
         NeoForge.EVENT_BUS.addListener(this::onVillagerTrades);
         if (FMLEnvironment.getDist() == Dist.CLIENT) {
-            registerConfigScreen();
+            SimpleGunpowderNeoForgeClient.registerConfigScreen();
         }
-    }
-
-    private void registerConfigScreen() {
-        ModList.get().getModContainerById(SimpleGunpowder.MOD_ID).ifPresent(container ->
-            container.registerExtensionPoint(IConfigScreenFactory.class,
-                (modContainer, parent) -> new SimpleGunpowderConfigScreen(parent)));
     }
 
     private void onVillagerTrades(VillagerTradesEvent event) {

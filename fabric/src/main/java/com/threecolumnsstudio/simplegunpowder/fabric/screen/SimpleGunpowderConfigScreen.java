@@ -1,7 +1,9 @@
 package com.threecolumnsstudio.simplegunpowder.fabric.screen;
 
+import java.util.List;
 import java.util.function.Consumer;
 
+import com.threecolumnsstudio.simplegunpowder.SimpleGunpowder;
 import com.threecolumnsstudio.simplegunpowder.SimpleGunpowderConfig;
 
 import net.minecraft.client.gl.RenderPipelines;
@@ -20,6 +22,7 @@ import net.minecraft.client.gui.widget.ScrollableLayoutWidget;
 import net.minecraft.client.gui.widget.TabNavigationWidget;
 import net.minecraft.client.gui.widget.ThreePartsLayoutWidget;
 import net.minecraft.screen.ScreenTexts;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.text.Text;
 
 public final class SimpleGunpowderConfigScreen extends Screen {
@@ -90,7 +93,7 @@ public final class SimpleGunpowderConfigScreen extends Screen {
         GridWidget grid = new GridWidget();
         grid.setColumnSpacing(4).setRowSpacing(ROW_SPACING);
 
-        GridWidget.Adder rows = grid.createAdder(2);
+        GridWidget.Adder rows = grid.createAdder(1);
         addSetting(rows, "simplegunpowder.config.small", this.small, value -> this.small = value);
         addSetting(rows, "simplegunpowder.config.medium", this.medium, value -> this.medium = value);
         addSetting(rows, "simplegunpowder.config.large", this.large, value -> this.large = value);
@@ -102,7 +105,6 @@ public final class SimpleGunpowderConfigScreen extends Screen {
     }
 
     private void addSetting(GridWidget.Adder rows, String translationKey, boolean initialValue, Consumer<Boolean> setter) {
-        rows.add(new ReloadIcon(Text.translatable("simplegunpowder.config.reload_hint")));
         rows.add(toggle(translationKey, initialValue, setter));
     }
 
@@ -120,8 +122,31 @@ public final class SimpleGunpowderConfigScreen extends Screen {
         config.setIndustrialCraftingEnabled(this.industrial);
         config.setNetherSmallRecipeEnabled(this.netherSmall);
         config.setNetherMediumRecipeEnabled(this.netherMedium);
-        SimpleGunpowderConfig.save();
-        close();
+        if (SimpleGunpowderConfig.save()) {
+            close();
+            reloadRecipes();
+        }
+    }
+
+    private void reloadRecipes() {
+        if (!this.client.isIntegratedServerRunning()) {
+            return;
+        }
+        MinecraftServer server = this.client.getServer();
+        if (server == null) {
+            return;
+        }
+        server.executeSync(() -> {
+            try {
+                server.reloadResources(List.copyOf(server.getDataPackManager().getEnabledIds()))
+                    .exceptionally(throwable -> {
+                        SimpleGunpowder.LOGGER.error("Could not reload recipes after config change", throwable);
+                        return null;
+                    });
+            } catch (RuntimeException e) {
+                SimpleGunpowder.LOGGER.error("Could not start recipe reload after config change", e);
+            }
+        });
     }
 
     @Override

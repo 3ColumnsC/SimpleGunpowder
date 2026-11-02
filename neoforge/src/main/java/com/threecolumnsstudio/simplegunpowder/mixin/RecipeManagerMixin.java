@@ -27,22 +27,22 @@ public class RecipeManagerMixin {
     private void onApply(RecipeMap recipeMap, ResourceManager resourceManager,
                          ProfilerFiller profilerFiller, CallbackInfo ci) {
         SimpleGunpowderConfig config = SimpleGunpowderConfig.getInstance();
-        boolean modified = false;
+        List<String> disabled = new ArrayList<>();
         List<RecipeHolder<?>> filtered = new ArrayList<>();
 
         for (RecipeHolder<?> holder : this.recipes.values()) {
             Identifier id = holder.id().identifier();
             if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)
                     && !config.isEnabled(id.getPath())) {
-                SimpleGunpowder.LOGGER.info(
-                    "Disabled {} recipe (re-enable it in config/simplegunpowder.json)", id.getPath());
-                modified = true;
+                disabled.add(id.getPath());
                 continue;
             }
             filtered.add(holder);
         }
 
-        if (modified) {
+        if (!disabled.isEmpty()) {
+            SimpleGunpowder.LOGGER.info(
+                "Disabled {} recipe(s): {}", disabled.size(), String.join(", ", disabled));
             this.recipes = RecipeMap.create(filtered);
         }
     }

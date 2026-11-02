@@ -13,21 +13,23 @@ public final class RecipeFilter {
 
     public static RecipeMap filter(RecipeMap recipes) {
         SimpleGunpowderConfig config = SimpleGunpowderConfig.getInstance();
-        boolean modified = false;
+        List<String> disabled = new ArrayList<>();
         List<RecipeHolder<?>> filtered = new ArrayList<>();
 
         for (RecipeHolder<?> holder : recipes.values()) {
             Identifier id = holder.id().identifier();
             if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)
                     && !config.isEnabled(id.getPath())) {
-                SimpleGunpowder.LOGGER.info(
-                    "Disabled {} recipe (re-enable it in config/simplegunpowder.json)", id.getPath());
-                modified = true;
+                disabled.add(id.getPath());
                 continue;
             }
             filtered.add(holder);
         }
 
-        return modified ? RecipeMap.create(filtered) : recipes;
+        if (!disabled.isEmpty()) {
+            SimpleGunpowder.LOGGER.info(
+                "Disabled {} recipe(s): {}", disabled.size(), String.join(", ", disabled));
+        }
+        return disabled.isEmpty() ? recipes : RecipeMap.create(filtered);
     }
 }

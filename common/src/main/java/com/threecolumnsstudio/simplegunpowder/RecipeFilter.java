@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.crafting.Recipe;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -17,18 +18,23 @@ public final class RecipeFilter {
     private RecipeFilter() {}
 
     public static HolderLookup<Recipe<?>> filter(HolderLookup<Recipe<?>> recipes) {
+        List<String> disabled = recipes.listElements()
+                .map(reference -> reference.key())
+                .filter(RecipeFilter::isDisabled)
+                .map(key -> key.identifier().getPath())
+                .toList();
+        if (!disabled.isEmpty()) {
+            SimpleGunpowder.LOGGER.info(
+                    "Disabled {} recipe(s): {}",
+                    disabled.size(), String.join(", ", disabled));
+        }
         return new DisabledRecipeLookup(recipes);
     }
 
     private static boolean isDisabled(ResourceKey<Recipe<?>> key) {
         Identifier id = key.identifier();
-        if (!id.getNamespace().equals(SimpleGunpowder.MOD_ID)
-                || SimpleGunpowderConfig.getInstance().isEnabled(id.getPath())) {
-            return false;
-        }
-        SimpleGunpowder.LOGGER.info(
-                "Disabled {} recipe (re-enable it in config/simplegunpowder.json)", id.getPath());
-        return true;
+        return id.getNamespace().equals(SimpleGunpowder.MOD_ID)
+                && !SimpleGunpowderConfig.getInstance().isEnabled(id.getPath());
     }
 
     private record DisabledRecipeLookup(HolderLookup<Recipe<?>> delegate)

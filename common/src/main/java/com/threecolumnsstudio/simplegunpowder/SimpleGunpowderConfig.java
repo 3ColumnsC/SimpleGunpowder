@@ -85,29 +85,44 @@ public class SimpleGunpowderConfig {
     public static void load() {
         Path configPath = configPath();
 
-        String saved = null;
-        try {
-            saved = Files.exists(configPath) ? Files.readString(configPath) : null;
-            INSTANCE = saved == null ? new SimpleGunpowderConfig()
-                    : GSON.fromJson(saved, SimpleGunpowderConfig.class);
-            if (INSTANCE == null) {
-                INSTANCE = new SimpleGunpowderConfig();
-            }
-        } catch (Exception e) {
-            SimpleGunpowder.LOGGER.warn("Could not read config, using defaults ({})", e.getClass().getSimpleName());
+        if (!Files.exists(configPath)) {
             INSTANCE = new SimpleGunpowderConfig();
+            save();
+            return;
         }
 
-        if (!GSON.toJson(INSTANCE).equals(saved)) {
-            save();
+        try {
+            SimpleGunpowderConfig loaded = GSON.fromJson(Files.readString(configPath), SimpleGunpowderConfig.class);
+            if (loaded == null) {
+                SimpleGunpowder.LOGGER.warn("Config file is empty, using defaults without overwriting it ({})",
+                        configPath);
+                INSTANCE = new SimpleGunpowderConfig();
+            } else {
+                INSTANCE = loaded;
+            }
+        } catch (Exception e) {
+            SimpleGunpowder.LOGGER.warn(
+                    "Could not read config, using defaults without overwriting it ({}, {})",
+                    configPath, e.getClass().getSimpleName());
+            INSTANCE = new SimpleGunpowderConfig();
         }
     }
 
-    public static void save() {
-        try (Writer writer = Files.newBufferedWriter(configPath())) {
-            GSON.toJson(INSTANCE, writer);
-        } catch (IOException e) {
-            SimpleGunpowder.LOGGER.error("Could not save config ({})", e.getClass().getSimpleName());
+    public static boolean save() {
+        Path configPath = configPath();
+        try {
+            Path parent = configPath.getParent();
+            if (parent != null) {
+                Files.createDirectories(parent);
+            }
+            try (Writer writer = Files.newBufferedWriter(configPath)) {
+                GSON.toJson(INSTANCE, writer);
+            }
+            return true;
+        } catch (IOException | SecurityException e) {
+            SimpleGunpowder.LOGGER.error("Could not save config to {} ({})",
+                    configPath, e.getClass().getSimpleName());
+            return false;
         }
     }
 

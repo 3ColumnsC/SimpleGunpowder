@@ -8,7 +8,6 @@
   "simplegunpowder.config.nether_small": "ネザー小レシピを有効化",
   "simplegunpowder.config.potent_sulfur": "強力な硫黄のレシピを有効化",
   "simplegunpowder.config.refined_sulfur": "精製硫黄のレシピを有効化",
-  "simplegunpowder.config.reload_hint": "この操作にはMinecraftのワールドを退出するか、ゲームを再起動する必要があります。",
   "simplegunpowder.config.small": "小火薬のレシピを有効化",
   "simplegunpowder.config.tab.general": "一般",
   "simplegunpowder.config.title": "シンプル火薬",

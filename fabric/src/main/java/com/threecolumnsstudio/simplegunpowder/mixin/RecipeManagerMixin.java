@@ -17,7 +17,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Mixin(RecipeManager.class)
@@ -33,22 +35,22 @@ public abstract class RecipeManagerMixin {
     private void onApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager,
                          Profiler profiler, CallbackInfo ci) {
         SimpleGunpowderConfig config = SimpleGunpowderConfig.getInstance();
-        boolean modified = false;
+        List<String> disabled = new ArrayList<>();
         Map<Identifier, RecipeEntry<?>> filtered = new HashMap<>();
 
         for (Map.Entry<Identifier, RecipeEntry<?>> entry : this.recipesById.entrySet()) {
             Identifier id = entry.getKey();
             if (id.getNamespace().equals(SimpleGunpowder.MOD_ID)
                     && !config.isEnabled(id.getPath())) {
-                SimpleGunpowder.LOGGER.info(
-                    "Disabled {} recipe (re-enable it in config/simplegunpowder.json)", id.getPath());
-                modified = true;
+                disabled.add(id.getPath());
                 continue;
             }
             filtered.put(entry.getKey(), entry.getValue());
         }
 
-        if (modified) {
+        if (!disabled.isEmpty()) {
+            SimpleGunpowder.LOGGER.info(
+                "Disabled {} recipe(s): {}", disabled.size(), String.join(", ", disabled));
             this.recipesById = filtered;
 
             Multimap<RecipeType<?>, RecipeEntry<?>> filteredByType = ArrayListMultimap.create();
